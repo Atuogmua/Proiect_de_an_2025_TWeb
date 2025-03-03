@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\views\\shared\\_hero.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\shared\\_hero.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\content\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\content\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\shop\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:Shop\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Shared\\_Header.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T09:13:04.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Shop\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Shop\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T09:17:53.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Footer.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shared\\_Footer.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Shared\\_Footer.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shared\\_Footer.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Shared\\_Footer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T09:20:32.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Hero.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shared\\_Hero.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Shared\\_Hero.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shared\\_Hero.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Shared\\_Hero.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T09:19:00.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "Shop\\App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "Shop\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T07:45:32.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T09:37:34.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T07:20:13.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Content\\style.css",
+              "RelativeDocumentMoniker": "Shop\\Content\\style.css",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Content\\style.css",
+              "RelativeToolTip": "Shop\\Content\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-03T08:27:41.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Shop\\Global.asax.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Global.asax.cs",
+              "RelativeToolTip": "Shop\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T07:43:19.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Shop\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T07:36:55.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AboutUs.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Home\\AboutUs.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Home\\AboutUs.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Home\\AboutUs.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Home\\AboutUs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T15:11:00.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Shop\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Shop\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T09:37:02.805Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
