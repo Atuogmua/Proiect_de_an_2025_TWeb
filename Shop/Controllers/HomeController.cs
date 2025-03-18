@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Shop.Models;
 
 namespace Shop.Controllers
 {
@@ -11,7 +12,18 @@ namespace Shop.Controllers
         // GET: Home
           public ActionResult Index()
           {
-                 return View();
+               var product = Request.QueryString["p"];
+
+               UserData u = new UserData();
+               u.Username = "Costumer";
+               u.Products = new List<string> {"Product #1", "Product #2", "Product #3" };
+                 
+               return View(u);
+          }
+          [HttpPost]
+          public ActionResult Product(string btn)
+          {
+               return RedirectToAction("Product", "Home", new { @p = btn });
           }
           public ActionResult AboutUs()
           {

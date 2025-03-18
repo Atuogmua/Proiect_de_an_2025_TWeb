@@ -1,17 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\",
+  "WorkspaceRootPath": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\views\\shop\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\shop\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\beloc\\onedrive\\comp - lenovo\\documente\\github\\proiect_de_an_2025_tweb\\shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\beloc\\onedrive\\comp - lenovo\\documente\\github\\proiect_de_an_2025_tweb\\shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\beloc\\onedrive\\comp - lenovo\\documente\\github\\proiect_de_an_2025_tweb\\shop\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\tweb\\shop\\shop\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\beloc\\onedrive\\comp - lenovo\\documente\\github\\proiect_de_an_2025_tweb\\shop\\views\\home\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\beloc\\onedrive\\comp - lenovo\\documente\\github\\proiect_de_an_2025_tweb\\shop\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\beloc\\onedrive\\comp - lenovo\\documente\\github\\proiect_de_an_2025_tweb\\shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\beloc\\onedrive\\comp - lenovo\\documente\\github\\proiect_de_an_2025_tweb\\shop\\views\\cart\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\cart\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\beloc\\onedrive\\comp - lenovo\\documente\\github\\proiect_de_an_2025_tweb\\shop\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\beloc\\onedrive\\comp - lenovo\\documente\\github\\proiect_de_an_2025_tweb\\shop\\views\\cart\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\cart\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\beloc\\onedrive\\comp - lenovo\\documente\\github\\proiect_de_an_2025_tweb\\shop\\controllers\\shopcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\shopcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\beloc\\onedrive\\comp - lenovo\\documente\\github\\proiect_de_an_2025_tweb\\shop\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -22,41 +62,179 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "_Header.cshtml",
-              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shared\\_Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Shared\\_Header.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Shared\\_Header.cshtml",
-              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Shared\\_Header.cshtml",
               "RelativeToolTip": "Shop\\Views\\Shared\\_Header.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-04T10:31:43.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T10:09:32.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Shop\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Shop\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:07:43.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserData.cs",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserData.cs",
+              "RelativeDocumentMoniker": "Shop\\models\\UserData.cs",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserData.cs",
+              "RelativeToolTip": "Shop\\models\\UserData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:07:12.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cshtml",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Product.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Home\\Product.cshtml",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Product.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Home\\Product.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T10:13:25.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "Shop\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "Shop\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:23:55.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Shop\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Shop\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:24:03.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Catalog.cshtml",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Catalog.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Cart\\Catalog.cshtml",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Catalog.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Cart\\Catalog.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T10:22:02.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CheckOut.cshtml",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\CheckOut.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Cart\\CheckOut.cshtml",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\CheckOut.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Cart\\CheckOut.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T10:22:03.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ShopController .cs",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\ShopController .cs",
+              "RelativeDocumentMoniker": "Shop\\Controllers\\ShopController .cs",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\ShopController .cs",
+              "RelativeToolTip": "Shop\\Controllers\\ShopController .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:21:26.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Cart.cshtml",
-              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shop\\Cart.cshtml",
-              "RelativeDocumentMoniker": "Shop\\Views\\Shop\\Cart.cshtml",
-              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Shop\\Cart.cshtml",
-              "RelativeToolTip": "Shop\\Views\\Shop\\Cart.cshtml",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAH4AAAB3AAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Cart.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Cart\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Cart.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Cart\\Cart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-04T10:31:20.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Shop\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Shop\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:19:45.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Services.cshtml",
-              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Home\\Services.cshtml",
+              "DocumentMoniker": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Services.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Home\\Services.cshtml",
-              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\TWeb\\Shop\\Shop\\Views\\Home\\Services.cshtml",
+              "ToolTip": "C:\\Users\\beloc\\OneDrive\\Comp - Lenovo\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Services.cshtml",
               "RelativeToolTip": "Shop\\Views\\Home\\Services.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
