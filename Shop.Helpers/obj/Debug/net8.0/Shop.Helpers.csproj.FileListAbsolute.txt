@@ -1,0 +1,12 @@
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\bin\Debug\net8.0\Shop.Helpers.deps.json
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\bin\Debug\net8.0\Shop.Helpers.dll
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\bin\Debug\net8.0\Shop.Helpers.pdb
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\net8.0\Shop.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\net8.0\Shop.Helpers.AssemblyInfoInputs.cache
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\net8.0\Shop.Helpers.AssemblyInfo.cs
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\net8.0\Shop.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\net8.0\Shop.Helpers.sourcelink.json
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\net8.0\Shop.Helpers.dll
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\net8.0\refint\Shop.Helpers.dll
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\net8.0\Shop.Helpers.pdb
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\net8.0\ref\Shop.Helpers.dll

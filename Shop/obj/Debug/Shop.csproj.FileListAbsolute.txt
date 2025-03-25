@@ -120,3 +120,5 @@ C:\Users\beloc\OneDrive\Comp - Lenovo\Documente\GitHub\Proiect_de_an_2025_TWeb\S
 C:\Users\beloc\OneDrive\Comp - Lenovo\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop\obj\Debug\Shop.csproj.Up2Date
 C:\Users\beloc\OneDrive\Comp - Lenovo\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop\obj\Debug\Shop.dll
 C:\Users\beloc\OneDrive\Comp - Lenovo\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop\obj\Debug\Shop.pdb
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop\obj\Debug\Shop.dll
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop\obj\Debug\Shop.pdb

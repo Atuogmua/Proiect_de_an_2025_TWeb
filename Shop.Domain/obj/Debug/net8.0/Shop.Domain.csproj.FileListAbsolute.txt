@@ -1,0 +1,12 @@
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\bin\Debug\net8.0\Shop.Domain.deps.json
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\bin\Debug\net8.0\Shop.Domain.dll
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\bin\Debug\net8.0\Shop.Domain.pdb
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\net8.0\Shop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\net8.0\Shop.Domain.AssemblyInfoInputs.cache
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\net8.0\Shop.Domain.AssemblyInfo.cs
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\net8.0\Shop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\net8.0\Shop.Domain.sourcelink.json
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\net8.0\Shop.Domain.dll
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\net8.0\refint\Shop.Domain.dll
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\net8.0\Shop.Domain.pdb
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\net8.0\ref\Shop.Domain.dll

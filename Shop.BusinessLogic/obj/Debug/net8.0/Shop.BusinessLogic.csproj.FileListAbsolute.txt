@@ -1,0 +1,6 @@
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\obj\Debug\net8.0\Shop.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\obj\Debug\net8.0\Shop.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\obj\Debug\net8.0\Shop.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\obj\Debug\net8.0\Shop.BusinessLogic.AssemblyInfo.cs
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\obj\Debug\net8.0\Shop.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\madam\OneDrive\Documente\GitHub\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\obj\Debug\net8.0\Shop.BusinessLogic.sourcelink.json

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shop.Helpers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+405a279911c8a002c1489d6923aa71a7c9d44540")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8b1d5eef25cfcfac98d0fa2efcc4fb7b0ea23b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shop.Helpers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shop.Helpers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

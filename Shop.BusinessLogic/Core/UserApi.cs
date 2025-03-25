@@ -8,6 +8,11 @@ namespace Shop.BusinessLogic.Core
 {
      public class UserApi
      {
-          public UserApi() { }
+          //-----------------------------AUTH--------------------------------
+          public string UserAuthLogicAction(UserLoginDO data) {
+               
+               
+               return "tonkey-key";
+          }
      }
 }

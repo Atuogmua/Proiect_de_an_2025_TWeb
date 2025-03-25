@@ -7,36 +7,64 @@
       "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\blstruct\\authbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\blstruct\\authbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\interface\\isession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\interface\\isession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop\\views\\auth\\userpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\auth\\userpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\sessionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\sessionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{124D13DF-20B8-466B-818F-3C20E0BFB36F}|Shop.Domain\\Shop.Domain.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.domain\\model\\user\\userlogicdo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{124D13DF-20B8-466B-818F-3C20E0BFB36F}|Shop.Domain\\Shop.Domain.csproj|solutionrelative:shop.domain\\model\\user\\userlogicdo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\interface\\isession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\interface\\isession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\interface\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\interface\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\blstruct\\authbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\blstruct\\authbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\interface\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\interface\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -49,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\cart\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -71,10 +95,6 @@
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\shopcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -86,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -97,21 +117,94 @@
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T10:00:18.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\UserPage.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Auth\\UserPage.cshtml",
+              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\UserPage.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Auth\\UserPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T09:59:59.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T09:59:56.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserLogin.cs",
+              "RelativeDocumentMoniker": "Shop\\models\\UserLogin.cs",
+              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserLogin.cs",
+              "RelativeToolTip": "Shop\\models\\UserLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T09:53:01.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SessionBL.cs",
+              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\SessionBL.cs",
+              "RelativeDocumentMoniker": "Shop.BusinessLogic\\SessionBL.cs",
+              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\SessionBL.cs",
+              "RelativeToolTip": "Shop.BusinessLogic\\SessionBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T09:37:27.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UserLogicDO.cs",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.Domain\\Model\\User\\UserLogicDO.cs",
               "RelativeDocumentMoniker": "Shop.Domain\\Model\\User\\UserLogicDO.cs",
               "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.Domain\\Model\\User\\UserLogicDO.cs",
               "RelativeToolTip": "Shop.Domain\\Model\\User\\UserLogicDO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T15:10:25.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ISession.cs",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\ISession.cs",
               "RelativeDocumentMoniker": "Shop.BusinessLogic\\Interface\\ISession.cs",
@@ -124,46 +217,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IAuth.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\IAuth.cs",
-              "RelativeDocumentMoniker": "Shop.BusinessLogic\\Interface\\IAuth.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\IAuth.cs",
-              "RelativeToolTip": "Shop.BusinessLogic\\Interface\\IAuth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T15:08:26.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UserApi.cs",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Core\\UserApi.cs",
               "RelativeDocumentMoniker": "Shop.BusinessLogic\\Core\\UserApi.cs",
               "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Core\\UserApi.cs",
               "RelativeToolTip": "Shop.BusinessLogic\\Core\\UserApi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T15:08:19.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "AuthBL.cs",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\BLStruct\\AuthBL.cs",
               "RelativeDocumentMoniker": "Shop.BusinessLogic\\BLStruct\\AuthBL.cs",
               "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\BLStruct\\AuthBL.cs",
               "RelativeToolTip": "Shop.BusinessLogic\\BLStruct\\AuthBL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T15:08:01.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Shop\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Shop\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvy0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:19:45.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserData.cs",
+              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserData.cs",
+              "RelativeDocumentMoniker": "Shop\\models\\UserData.cs",
+              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserData.cs",
+              "RelativeToolTip": "Shop\\models\\UserData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:07:12.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Shop\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Shop\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:24:03.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IAuth.cs",
+              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\IAuth.cs",
+              "RelativeDocumentMoniker": "Shop.BusinessLogic\\Interface\\IAuth.cs",
+              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\IAuth.cs",
+              "RelativeToolTip": "Shop.BusinessLogic\\Interface\\IAuth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:08:26.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "BusinessLogic.cs",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\BusinessLogic.cs",
               "RelativeDocumentMoniker": "Shop.BusinessLogic\\BusinessLogic.cs",
@@ -176,19 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_Header.cshtml",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Shared\\_Header.cshtml",
-              "RelativeDocumentMoniker": "Shop\\Views\\Shared\\_Header.cshtml",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Shared\\_Header.cshtml",
-              "RelativeToolTip": "Shop\\Views\\Shared\\_Header.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T10:31:43.751Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Home\\Index.cshtml",
@@ -200,7 +320,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Shared\\_Header.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T10:31:43.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Shop\\Controllers\\HomeController.cs",
@@ -213,19 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserData.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserData.cs",
-              "RelativeDocumentMoniker": "Shop\\models\\UserData.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserData.cs",
-              "RelativeToolTip": "Shop\\models\\UserData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T10:07:12.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "Product.cshtml",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Product.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Home\\Product.cshtml",
@@ -237,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "BundleConfig.cs",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\BundleConfig.cs",
               "RelativeDocumentMoniker": "Shop\\App_Start\\BundleConfig.cs",
@@ -249,19 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "Shop\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "Shop\\App_Start\\RouteConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T10:24:03.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "Catalog.cshtml",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Catalog.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Cart\\Catalog.cshtml",
@@ -273,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "CheckOut.cshtml",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\CheckOut.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Cart\\CheckOut.cshtml",
@@ -285,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "ShopController .cs",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\ShopController .cs",
               "RelativeDocumentMoniker": "Shop\\Controllers\\ShopController .cs",
@@ -296,12 +404,8 @@
               "WhenOpened": "2025-03-18T10:21:26.388Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "Cart.cshtml",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Cart.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Cart\\Cart.cshtml",
@@ -313,19 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Shop\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Shop\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T10:19:45.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "Services.cshtml",
               "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Services.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Home\\Services.cshtml",

@@ -227,6 +227,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\UserData.cs" />
+    <Compile Include="Models\UserLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -274,6 +275,7 @@
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Cart\CheckOut.cshtml" />
     <Content Include="Views\Home\Product.cshtml" />
+    <Content Include="Views\Auth\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -283,6 +285,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shop.BusinessLogic\Shop.BusinessLogic.csproj">
+      <Project>{e8c0b545-9148-4c4a-9675-770ebf5adf0a}</Project>
+      <Name>Shop.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shop.Domain\Shop.Domain.csproj">
+      <Project>{124d13df-20b8-466b-818f-3c20e0bfb36f}</Project>
+      <Name>Shop.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
