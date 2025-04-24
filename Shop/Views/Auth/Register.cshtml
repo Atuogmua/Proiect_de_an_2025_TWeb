@@ -1,6 +1,106 @@
-﻿
-@{
-     Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@{
+     Layout = "~/Views/Shared/_SimpleLayout.cshtml";
      ViewBag.Title = "Register";
 }
 
+@using System.Web.Optimization
+@model Shop.Models.UserLogin
+
+<section class="">
+     <div class="px-4 py-5 px-md-5 text-center text-lg-start">
+          <div class="container">
+               <div class="row gx-lg-5 align-items-md-center">
+                    <!--Left side-->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                         <h1 class="my-5 display-3 fw-bold">
+                              Welcome to Eden<br />
+                              <span class="text-primary">Your comfort begins here.</span>
+                         </h1>
+                         <p>
+                              🌙 Why Join Eden?
+                              Sleep Better, Shop Smarter
+                              We don’t just sell mattresses and beds — we deliver the foundation of a good night's sleep. When you sign up, you unlock a whole new level of comfort.
+                         </p>
+
+                    </div>
+
+
+                    <!--Right side-->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                         <div class="card">
+                              <div class="card-body py-5 px-md-5">
+                                   @Html.ValidationSummary(true)
+                                   @using (Html.BeginForm("Register", "Auth", FormMethod.Post, new { @id = "LoginForm" }))
+                                   {
+                                        @Html.AntiForgeryToken()
+
+                                        <!--Username-->
+                                        <div class="mb-4">
+                                             @Html.TextBoxFor(login => login.Username, new
+                                             {
+                                                  @class = "form-control",
+                                                  placeholder = "example@gmail.com",
+                                                  title = "Please enter your username",
+                                                  id = "username"
+                                             })
+                                        </div>
+
+                                        <!-- Password -->
+                                        <div class="mb-4">
+                                             @Html.PasswordFor(login => login.Password, new
+                                             {
+                                                 @class = "form-control",
+                                                 placeholder = "Enter your password",
+                                                 title = "Please enter your password",
+                                                 id = "password"
+                                             })
+                                        </div>
+
+                                        <div>
+                                             <button class="btn">Submit</button>
+                                             <a class="btn" href="register.cshtml">Register</a>
+                                        </div>
+
+
+                                   }
+
+
+
+
+
+                              </div>
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
+
+@section Scripts{
+     @Scripts.Render("~/bundles/validation/js")
+     <script type="text/javascript">
+          $(function () {
+               $("LoginForm").validate({
+                    rules: {
+                         Username: {
+                              required: true
+                         },
+                         Password: {
+                              required: true
+                         }
+                    },
+                    submitHandler: function (form) {
+                         form.submit();
+                    },
+                    errorPlacement: function (error, element) {
+                         $(element)
+                              .closest("form")
+                              .find("label[for='" + element.attr("id") + "']")
+                              .append(error);
+                    },
+                    errorElement: "span"
+               });
+          });
+     </script>     
+}

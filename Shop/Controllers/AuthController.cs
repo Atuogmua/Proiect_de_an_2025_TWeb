@@ -5,18 +5,32 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.SessionState;
 using Shop.Models;
+using Shop.BusinessLogic.Core;
+using Shop.BusinessLogic.Interface;
+using Shop.Domain.Model.User;
+
 
 namespace Shop.Controllers
 {
     public class AuthController : Controller
     {
-          // GET: Auth
           private readonly ISession _session;
           public AuthController()
           {
-               var bl = new BussinessLogic();
-               _session = bl.GetSession();
+               var bl = new BusinessLogic.BusinessLogic();
+               _session = bl.GetSessionBL();
           }
+          // GET: Auth
+          public ActionResult Index()
+          {
+               return View();
+          }
+          [HttpGet]
+          public ActionResult Register()
+          {
+               return View();
+          }
+
           [HttpPost]
           [ValidateAntiForgeryToken]
           public ActionResult Register(UserLogin login)
@@ -27,13 +41,13 @@ namespace Shop.Controllers
                     {
                          Username = login.Username,
                          Password = login.Password,
-                         LoginIp = login.LoginIp,
+                         UserIP = Request.UserHostAddress,
                          LoginDateTime = DateTime.Now
 
                     };
 
                     var userLogin = _session.UserLogin(data);
-                    if (userLogin.Status)
+                    /*if (userLogin.Status)
                     {
 
 
@@ -44,12 +58,17 @@ namespace Shop.Controllers
                     {
                          ModelState.AddModelError("", userLogin.StatusMsg);
                          return View();
-                    }
+                    }*/
                } 
 
 
 
                     return View();
+          }
+
+          public ActionResult Login()
+          {
+               return View();
           }
           public ActionResult UserPage() 
           {

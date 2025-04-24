@@ -1,0 +1,6 @@
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Helpers\bin\Debug\Shop.Helpers.dll
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Helpers\bin\Debug\Shop.Helpers.pdb
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\Shop.Helpers.csproj.AssemblyReference.cache
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\Shop.Helpers.csproj.CoreCompileInputs.cache
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\Shop.Helpers.dll
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Helpers\obj\Debug\Shop.Helpers.pdb

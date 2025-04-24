@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shop.BusinessLogic.Interface
 {
-     internal interface IAuth
+     public interface IAuth
      {
      }
 }

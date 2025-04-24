@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Shop.BusinessLogic.Core;
 using Shop.BusinessLogic.Interface;
+using Shop.Domain.Model.User;
 
 namespace Shop.BusinessLogic.BLStruct
 {
-     internal class AuthBL : UserApi, IAuth
+     public class AuthBL : UserApi, IAuth
      {
-          public string UserAuthLogic(UserLoginDO data)
+          public ULoginResp UserAuthLogic(UserLoginDO data)
           {
-               return UserAuthLogicAction(data);
+               return UserLoginAction(data);
           }
      }
 }

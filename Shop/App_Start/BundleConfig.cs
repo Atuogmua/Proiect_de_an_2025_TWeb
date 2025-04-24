@@ -23,16 +23,32 @@ namespace Shop
                // Bootstrap
                bundles.Add(new ScriptBundle("~/bundles/bootstrap/js").Include("~/Scripts/bootstrap.min.js"));
 
-               // Bootstrap bundles
-               //bundles.Add(new ScriptBundle("~/bundles/bootstrap-bundle/js").Include("~/Scripts/bootstrap.bundle.min.js"));
-
+   
                // Tiny Slider Scripts
                bundles.Add(new ScriptBundle("~/bundles/tiny-slider/js").Include("~/Scripts/tiny-slider.js"));
 
                // General Scripts
                bundles.Add(new ScriptBundle("~/bundles/main/js").Include("~/Scripts/custom.js"));
 
+               // jQuery
+               bundles.Add(new ScriptBundle("~/bundles/jquery/js").Include(
+                         "~/Scripts/jquery-3.3.1.min.js"));
 
+               // jQuery Validation
+               bundles.Add(new ScriptBundle("~/bundles/validation/js").Include(
+                   "~/Scripts/jquery.validate.min.js"));
+
+               // Unobtrusive           
+               bundles.Add(new ScriptBundle("~/bundles/unobtrusive/js").Include(
+                         "~/Scripts/jquery.unobtrusive-ajax.min.js"));
+
+               // Pace
+               bundles.Add(new ScriptBundle("~/bundles/pace/js").Include(
+                         "~/Scripts/pace.min.js"));
+               
+               //DataTables
+               bundles.Add(new ScriptBundle("~/bundles/datatables/js").Include(
+                   "~/Vendors/datatables/datatables.min.js"));
           }
      }
 }

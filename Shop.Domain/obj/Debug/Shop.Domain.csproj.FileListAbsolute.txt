@@ -1,0 +1,9 @@
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Domain\bin\Debug\Shop.Domain.dll
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Domain\bin\Debug\Shop.Domain.pdb
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Domain\bin\Debug\Shop.Helpers.dll
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Domain\bin\Debug\Shop.Helpers.pdb
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\Shop.Domain.csproj.AssemblyReference.cache
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\Shop.Domain.csproj.CoreCompileInputs.cache
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\Shop.Dom.40843D02.Up2Date
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\Shop.Domain.dll
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.Domain\obj\Debug\Shop.Domain.pdb

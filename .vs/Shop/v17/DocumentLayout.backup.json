@@ -1,102 +1,114 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\",
+  "WorkspaceRootPath": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Core\\UserApi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:Shop.BusinessLogic\\Core\\UserApi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop\\views\\auth\\userpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\auth\\userpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\sessionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\sessionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\proiect_de_an_2025_tweb\\shop\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124D13DF-20B8-466B-818F-3C20E0BFB36F}|Shop.Domain\\Shop.Domain.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.domain\\model\\user\\userlogicdo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124D13DF-20B8-466B-818F-3C20E0BFB36F}|Shop.Domain\\Shop.Domain.csproj|solutionrelative:shop.domain\\model\\user\\userlogicdo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\blstruct\\authbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\blstruct\\authbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\interface\\isession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\interface\\isession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|c:\\users\\madam\\onedrive\\documente\\github\\proiect_de_an_2025_tweb\\shop.businesslogic\\interface\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8C0B545-9148-4C4A-9675-770EBF5ADF0A}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\interface\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\home\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|d:\\uni\\anul ii\\semestrul ii\\proiect_de_an_2025_tweb\\shop\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\cart\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop.businesslogic\\core\\adminapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\core\\adminapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D762BF8-F30B-4721-9FD5-E542B33DD453}|Shop.Domain\\Shop.Domain.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop.domain\\model\\user\\userlogindo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D762BF8-F30B-4721-9FD5-E542B33DD453}|Shop.Domain\\Shop.Domain.csproj|solutionrelative:shop.domain\\model\\user\\userlogindo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop.businesslogic\\blstruct\\authbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\blstruct\\authbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\views\\auth\\userpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\auth\\userpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\SessionBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:Shop.BusinessLogic\\SessionBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\ISession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:Shop.BusinessLogic\\Interface\\ISession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop.businesslogic\\core\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:shop.businesslogic\\core\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\IAuth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:Shop.BusinessLogic\\Interface\\IAuth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D762BF8-F30B-4721-9FD5-E542B33DD453}|Shop.Domain\\Shop.Domain.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop.domain\\model\\user\\udbtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D762BF8-F30B-4721-9FD5-E542B33DD453}|Shop.Domain\\Shop.Domain.csproj|solutionrelative:shop.domain\\model\\user\\udbtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\views\\home\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\views\\cart\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\cart\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\cart\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\views\\cart\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\cart\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\controllers\\shopcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\controllers\\shopcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\shopcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\shop\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\shop\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E338C2F5-66F7-4785-8B30-6FAB902DB3E9}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Shop.BusinessLogic.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{37351C80-92D2-4EE1-8052-35E623A00CAB}|Shop.BusinessLogic\\Shop.BusinessLogic.csproj|solutionrelative:Shop.BusinessLogic\\Shop.BusinessLogic.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,205 +126,239 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "Shop\\Views\\Auth\\Login.cshtml",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "Shop\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T10:00:18.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserPage.cshtml",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\UserPage.cshtml",
-              "RelativeDocumentMoniker": "Shop\\Views\\Auth\\UserPage.cshtml",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\UserPage.cshtml",
-              "RelativeToolTip": "Shop\\Views\\Auth\\UserPage.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T09:59:59.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Register.cshtml",
-              "RelativeDocumentMoniker": "Shop\\Views\\Auth\\Register.cshtml",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Register.cshtml",
-              "RelativeToolTip": "Shop\\Views\\Auth\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T09:59:56.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserLogin.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserLogin.cs",
-              "RelativeDocumentMoniker": "Shop\\models\\UserLogin.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserLogin.cs",
-              "RelativeToolTip": "Shop\\models\\UserLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "Shop\\App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "Shop\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwDAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T09:53:01.891Z",
+              "WhenOpened": "2025-04-24T08:48:00.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SessionBL.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\SessionBL.cs",
-              "RelativeDocumentMoniker": "Shop.BusinessLogic\\SessionBL.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\SessionBL.cs",
-              "RelativeToolTip": "Shop.BusinessLogic\\SessionBL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T09:37:27.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserLogicDO.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.Domain\\Model\\User\\UserLogicDO.cs",
-              "RelativeDocumentMoniker": "Shop.Domain\\Model\\User\\UserLogicDO.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.Domain\\Model\\User\\UserLogicDO.cs",
-              "RelativeToolTip": "Shop.Domain\\Model\\User\\UserLogicDO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T15:10:25.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ISession.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\ISession.cs",
-              "RelativeDocumentMoniker": "Shop.BusinessLogic\\Interface\\ISession.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\ISession.cs",
-              "RelativeToolTip": "Shop.BusinessLogic\\Interface\\ISession.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T15:08:34.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserApi.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Core\\UserApi.cs",
-              "RelativeDocumentMoniker": "Shop.BusinessLogic\\Core\\UserApi.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Core\\UserApi.cs",
-              "RelativeToolTip": "Shop.BusinessLogic\\Core\\UserApi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T15:08:19.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "AuthBL.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\BLStruct\\AuthBL.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\BLStruct\\AuthBL.cs",
               "RelativeDocumentMoniker": "Shop.BusinessLogic\\BLStruct\\AuthBL.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\BLStruct\\AuthBL.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\BLStruct\\AuthBL.cs",
               "RelativeToolTip": "Shop.BusinessLogic\\BLStruct\\AuthBL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T15:08:01.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAUwGcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T09:59:56.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserApi.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Core\\UserApi.cs",
+              "RelativeDocumentMoniker": "Shop.BusinessLogic\\Core\\UserApi.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Core\\UserApi.cs",
+              "RelativeToolTip": "Shop.BusinessLogic\\Core\\UserApi.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:08:19.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Shop\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Shop\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAADwvy0AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwE0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T10:19:45.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "UserData.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserData.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserData.cs",
               "RelativeDocumentMoniker": "Shop\\models\\UserData.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserData.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\models\\UserData.cs",
               "RelativeToolTip": "Shop\\models\\UserData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T10:07:12.799Z",
+              "WhenOpened": "2025-03-18T10:07:12.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserLoginDO.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.Domain\\Model\\User\\UserLoginDO.cs",
+              "RelativeDocumentMoniker": "Shop.Domain\\Model\\User\\UserLoginDO.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.Domain\\Model\\User\\UserLoginDO.cs",
+              "RelativeToolTip": "Shop.Domain\\Model\\User\\UserLoginDO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:10:25.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "AdminApi.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Core\\AdminApi.cs",
+              "RelativeDocumentMoniker": "Shop.BusinessLogic\\Core\\AdminApi.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Core\\AdminApi.cs",
+              "RelativeToolTip": "Shop.BusinessLogic\\Core\\AdminApi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T19:09:32.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ISession.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\ISession.cs",
+              "RelativeDocumentMoniker": "Shop.BusinessLogic\\Interface\\ISession.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\ISession.cs",
+              "RelativeToolTip": "Shop.BusinessLogic\\Interface\\ISession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:08:34.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserPage.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\UserPage.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Auth\\UserPage.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\UserPage.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Auth\\UserPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T09:59:59.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T10:00:18.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SessionBL.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\SessionBL.cs",
+              "RelativeDocumentMoniker": "Shop.BusinessLogic\\SessionBL.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\SessionBL.cs",
+              "RelativeToolTip": "Shop.BusinessLogic\\SessionBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T09:37:27.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\RouteConfig.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "Shop\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\RouteConfig.cs",
               "RelativeToolTip": "Shop\\App_Start\\RouteConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T10:24:03.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T19:20:26.638Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "IAuth.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\IAuth.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\IAuth.cs",
               "RelativeDocumentMoniker": "Shop.BusinessLogic\\Interface\\IAuth.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\IAuth.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Interface\\IAuth.cs",
               "RelativeToolTip": "Shop.BusinessLogic\\Interface\\IAuth.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T15:08:26.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T15:08:26.971Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "BusinessLogic.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\BusinessLogic.cs",
-              "RelativeDocumentMoniker": "Shop.BusinessLogic\\BusinessLogic.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\BusinessLogic.cs",
-              "RelativeToolTip": "Shop.BusinessLogic\\BusinessLogic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Core\\BusinessLogic.cs",
+              "RelativeDocumentMoniker": "Shop.BusinessLogic\\Core\\BusinessLogic.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Core\\BusinessLogic.cs",
+              "RelativeToolTip": "Shop.BusinessLogic\\Core\\BusinessLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T15:03:02.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T15:03:02.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
+              "Title": "UDBTable.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.Domain\\Model\\User\\UDBTable.cs",
+              "RelativeDocumentMoniker": "Shop.Domain\\Model\\User\\UDBTable.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.Domain\\Model\\User\\UDBTable.cs",
+              "RelativeToolTip": "Shop.Domain\\Model\\User\\UDBTable.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T10:48:14.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Models\\UserLogin.cs",
+              "RelativeDocumentMoniker": "Shop\\Models\\UserLogin.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Models\\UserLogin.cs",
+              "RelativeToolTip": "Shop\\Models\\UserLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T18:42:58.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Shop.BusinessLogic.csproj",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Shop.BusinessLogic.csproj",
+              "RelativeDocumentMoniker": "Shop.BusinessLogic\\Shop.BusinessLogic.csproj",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop.BusinessLogic\\Shop.BusinessLogic.csproj",
+              "RelativeToolTip": "Shop.BusinessLogic\\Shop.BusinessLogic.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-26T14:41:37.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Shop\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -320,11 +366,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "_Header.cshtml",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Shared\\_Header.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Shared\\_Header.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Shared\\_Header.cshtml",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Shared\\_Header.cshtml",
               "RelativeToolTip": "Shop\\Views\\Shared\\_Header.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -332,11 +378,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Shop\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Shop\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -345,11 +391,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Product.cshtml",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Product.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Product.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Home\\Product.cshtml",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Product.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Product.cshtml",
               "RelativeToolTip": "Shop\\Views\\Home\\Product.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -357,23 +403,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "BundleConfig.cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\BundleConfig.cs",
-              "RelativeDocumentMoniker": "Shop\\App_Start\\BundleConfig.cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\App_Start\\BundleConfig.cs",
-              "RelativeToolTip": "Shop\\App_Start\\BundleConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T10:23:55.723Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Catalog.cshtml",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Catalog.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Catalog.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Cart\\Catalog.cshtml",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Catalog.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Catalog.cshtml",
               "RelativeToolTip": "Shop\\Views\\Cart\\Catalog.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -381,11 +415,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "CheckOut.cshtml",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\CheckOut.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\CheckOut.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Cart\\CheckOut.cshtml",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\CheckOut.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\CheckOut.cshtml",
               "RelativeToolTip": "Shop\\Views\\Cart\\CheckOut.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -393,11 +427,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "ShopController .cs",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\ShopController .cs",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\ShopController .cs",
               "RelativeDocumentMoniker": "Shop\\Controllers\\ShopController .cs",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\ShopController .cs",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Controllers\\ShopController .cs",
               "RelativeToolTip": "Shop\\Controllers\\ShopController .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -405,11 +439,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Cart.cshtml",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Cart.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Cart.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Cart\\Cart.cshtml",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Cart.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Cart\\Cart.cshtml",
               "RelativeToolTip": "Shop\\Views\\Cart\\Cart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -417,11 +451,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Services.cshtml",
-              "DocumentMoniker": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Services.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Services.cshtml",
               "RelativeDocumentMoniker": "Shop\\Views\\Home\\Services.cshtml",
-              "ToolTip": "C:\\Users\\madam\\OneDrive\\Documente\\GitHub\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Services.cshtml",
+              "ToolTip": "D:\\Uni\\Anul II\\Semestrul II\\Proiect_de_an_2025_TWeb\\Shop\\Views\\Home\\Services.cshtml",
               "RelativeToolTip": "Shop\\Views\\Home\\Services.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
