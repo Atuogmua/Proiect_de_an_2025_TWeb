@@ -17,11 +17,8 @@ namespace Shop.Domain.Enums
           Deleted = 3,
 
           User = 100,
-          User1 = 101,
-          User2 = 102,
 
           Moderator = 200,
-          Vip = 300,
           Administrator = 400
      }
 }

@@ -4,7 +4,7 @@
 }
 
 @using System.Web.Optimization
-@model Shop.Models.UserLogin
+@model Shop.Models.UserRegister
 
 <section class="">
      <div class="px-4 py-5 px-md-5 text-center text-lg-start">
@@ -18,8 +18,8 @@
                          </h1>
                          <p>
                               🌙 Why Join Eden?
-                              Sleep Better, Shop Smarter
-                              We don’t just sell mattresses and beds — we deliver the foundation of a good night's sleep. When you sign up, you unlock a whole new level of comfort.
+                              <br>Sleep Better, Shop Smarter
+                              <br>We don’t just sell mattresses and beds — we deliver the foundation of a good night's sleep. When you sign up, you unlock a whole new level of comfort.
                          </p>
 
                     </div>
@@ -30,16 +30,27 @@
                          <div class="card">
                               <div class="card-body py-5 px-md-5">
                                    @Html.ValidationSummary(true)
-                                   @using (Html.BeginForm("Register", "Auth", FormMethod.Post, new { @id = "LoginForm" }))
+                                   @using (Html.BeginForm("Register", "Auth", FormMethod.Post, new { @id = "RgisterForm" }))
                                    {
                                         @Html.AntiForgeryToken()
 
                                         <!--Username-->
                                         <div class="mb-4">
-                                             @Html.TextBoxFor(login => login.Username, new
+                                             @Html.TextBoxFor(register => register.Email, new
                                              {
                                                   @class = "form-control",
                                                   placeholder = "example@gmail.com",
+                                                  title = "Please enter your email",
+                                                  id = "email"
+                                             })
+                                        </div>
+
+                                        <!--Username-->
+                                        <div class="mb-4">
+                                             @Html.TextBoxFor(register => register.Username, new
+                                             {
+                                                  @class = "form-control",
+                                                  placeholder = "Enter your username",
                                                   title = "Please enter your username",
                                                   id = "username"
                                              })
@@ -47,26 +58,39 @@
 
                                         <!-- Password -->
                                         <div class="mb-4">
-                                             @Html.PasswordFor(login => login.Password, new
+                                             @Html.PasswordFor(register => register.Password, new
+                                             {
+                                                  @class = "form-control",
+                                                  placeholder = "Enter your password",
+                                                  title = "Please enter your password",
+                                                  id = "password"
+                                             })
+                                             @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+
+                                        </div>
+
+                                        <!-- Confirm Password -->
+                                        <div class="form-group mb-4">
+                                             @Html.PasswordFor(m => m.ConfirmPassword, new
                                              {
                                                  @class = "form-control",
-                                                 placeholder = "Enter your password",
-                                                 title = "Please enter your password",
-                                                 id = "password"
+                                                 placeholder = "Confirm your password",
+                                                 id = "confirmPassword"
                                              })
+                                             @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
                                         </div>
+
+
 
                                         <div>
-                                             <button class="btn">Submit</button>
-                                             <a class="btn" href="register.cshtml">Register</a>
+                                             <button type="submit" class="btn">Register</button>
+                                        </div>
+                                        <div class="small">
+                                             Already have an acount?    <a class="btn-dark" href="@Url.Action("Login", "Auth")">Log In</a>
                                         </div>
 
 
-                                   }
-
-
-
-
+                                    }
 
                               </div>
 
@@ -81,13 +105,20 @@
      @Scripts.Render("~/bundles/validation/js")
      <script type="text/javascript">
           $(function () {
-               $("LoginForm").validate({
+               $("RegisterForm").validate({
                     rules: {
                          Username: {
                               required: true
                          },
                          Password: {
                               required: true
+                         },
+                         Email: {
+                              required: true
+                         },
+                         ConfirmPassword: {
+                              required: true,
+                              equalTo: "#password"
                          }
                     },
                     submitHandler: function (form) {

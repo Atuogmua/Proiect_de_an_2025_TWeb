@@ -43,8 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\URole.cs" />
+    <Compile Include="Model\User\Session.cs" />
     <Compile Include="Model\User\UDBTable.cs" />
     <Compile Include="Model\User\ULoginResp.cs" />
+    <Compile Include="Model\User\UMinimal.cs" />
+    <Compile Include="Model\User\URegisterDO.cs" />
     <Compile Include="Model\User\UserLoginDO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,6 +56,9 @@
       <Project>{2a1a5180-6a2d-4813-a0f4-078210af3fae}</Project>
       <Name>Shop.Helpers</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Product\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

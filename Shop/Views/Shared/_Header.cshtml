@@ -13,7 +13,7 @@
                <li class="nav-item ">
                     <a class="nav-link" href="@Url.Action("Index","Home")">Home</a>
                </li>
-               <li><a class="nav-link" href="@Url.Action("Catalog","Shop")">Shop</a></li>
+               <li><a class="nav-link" href="@Url.Action("Catalog","Cart")">Shop</a></li>
                <li><a class="nav-link" href="@Url.Action("AboutUs","Home")">About us</a></li>
                <li><a class="nav-link" href="@Url.Action("Services","Home")">Services</a></li>
                <li><a class="nav-link" href="@Url.Action("ContactUs","Home")">Contact us</a></li>
@@ -22,7 +22,7 @@
           <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
                <li><a class="nav-link" href="@Url.Action("UserPage","Auth")">
                    <span class="profile-address">@Html.DisplayFor(u=> u.Username)</span><img src="/Content/images/user.svg"></a></li>
-               <li><a class="nav-link" href="@Url.Action("Cart","Shop")"><img src="/Content/images/cart.svg"></a></li>
+               <li><a class="nav-link" href="@Url.Action("Index","Cart")"><img src="/Content/images/cart.svg"></a></li>
           </ul>
      </div>
 </div>

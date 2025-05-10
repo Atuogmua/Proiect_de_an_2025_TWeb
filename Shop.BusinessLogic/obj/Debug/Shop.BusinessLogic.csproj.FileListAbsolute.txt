@@ -1,12 +1,14 @@
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\Shop.BusinessLogic.dll.config
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\Shop.BusinessLogic.dll
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\Shop.BusinessLogic.pdb
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\AutoMapper.dll
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\EntityFramework.dll
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\Shop.Domain.dll
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\Shop.Helpers.dll
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\Shop.Domain.pdb
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\Shop.Helpers.pdb
+D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\AutoMapper.xml
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\EntityFramework.xml
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
 D:\Uni\Anul II\Semestrul II\Proiect_de_an_2025_TWeb\Shop.BusinessLogic\obj\Debug\Shop.BusinessLogic.csproj.AssemblyReference.cache
