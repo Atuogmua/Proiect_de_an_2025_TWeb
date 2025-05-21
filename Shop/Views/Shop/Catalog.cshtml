@@ -1,0 +1,30 @@
+﻿
+@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+     ViewBag.Title = "Catalog";
+}
+
+@model IEnumerable<Shop.Domain.Model.Product.ProductDO>
+
+
+<h2>Product Catalog</h2>
+
+<div class="row">
+     @foreach (var item in Model)
+     {
+          <div class="col-md-4">
+               <div class="card" style="margin-bottom: 20px;">
+                    <img src="@item.ProductImagePath" class="card-img-top" alt="@item.Name" style="max-height:200px;">
+                    <div class="card-body">
+                         <a href="@Url.Action("Details", "Product", new { id = item.Id })">
+                              <h5 class="card-title">@item.Name</h5>
+                         </a>
+                         <p class="card-text">@item.Description</p>
+                         <p><strong>Price:</strong> $@item.Price</p>
+                         <p><strong>Stock:</strong> @item.Stock</p>
+                    </div>
+               </div>
+          </div>
+     }
+</div>
+

@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\URole.cs" />
+    <Compile Include="Model\Product\PDBTable.cs" />
+    <Compile Include="Model\Product\ProductDO.cs" />
     <Compile Include="Model\User\Session.cs" />
     <Compile Include="Model\User\UDBTable.cs" />
     <Compile Include="Model\User\ULoginResp.cs" />
@@ -57,8 +59,6 @@
       <Name>Shop.Helpers</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\Product\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

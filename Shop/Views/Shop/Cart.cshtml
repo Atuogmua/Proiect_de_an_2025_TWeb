@@ -100,23 +100,33 @@
                <div class="col-md-6 pl-5">
                     <div class="row justify-content-end">
                          <div class="col-md-7">
-                              <table class="table">
-                                   <tr>
-                                        <th>Name</th>
-                                        <th>Price</th>
-                                        <th>Qty</th>
-                                        <th>Total</th>
-                                   </tr>
-                                   @foreach (var item in Model)
-                                   {
-                                        <tr>
-                                             <td>@item.Name</td>
-                                             <td>@item.Price</td>
-                                             <td>@item.Quantity</td>
-                                             <td>@(item.Price * item.Quantity)</td>
-                                        </tr>
-                                   }
-                              </table>
+                              <div class="row">
+                                   <div class="col-md-12 text-right border-bottom mb-5">
+                                        <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                                   </div>
+                              </div>
+                              <div class="row mb-3">
+                                   <div class="col-md-6">
+                                        <span class="text-black">Subtotal</span>
+                                   </div>
+                                   <div class="col-md-6 text-right">
+                                        <strong class="text-black">$230.00</strong>
+                                   </div>
+                              </div>
+                              <div class="row mb-5">
+                                   <div class="col-md-6">
+                                        <span class="text-black">Total</span>
+                                   </div>
+                                   <div class="col-md-6 text-right">
+                                        <strong class="text-black">$230.00</strong>
+                                   </div>
+                              </div>
+
+                              <div class="row">
+                                   <div class="col-md-12">
+                                        <button class="btn btn-black btn-lg py-3 btn-block" href="@Url.Action("CheckOut","Shop")"">Proceed To Checkout</button>
+                                   </div>
+                              </div>
                          </div>
                     </div>
                </div>

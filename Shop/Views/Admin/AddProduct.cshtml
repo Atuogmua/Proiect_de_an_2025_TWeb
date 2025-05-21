@@ -1,0 +1,44 @@
+﻿@{
+     Layout = "~/Views/Shared/_SimpleLayout.cshtml";
+     ViewBag.Title = "Add Product";
+}
+
+@model Shop.Domain.Model.Product.ProductDO
+
+
+<h2>Add Product</h2>
+
+@using (Html.BeginForm("AddProduct", "Admin", FormMethod.Post))
+{
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          @Html.LabelFor(m => m.Name)
+          @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+          @Html.ValidationMessageFor(m => m.Name)
+     </div>
+
+     <div class="form-group">
+          @Html.LabelFor(m => m.Description)
+          @Html.TextAreaFor(m => m.Description, new { @class = "form-control" })
+     </div>
+
+     <div class="form-group">
+          @Html.LabelFor(m => m.Price)
+          @Html.TextBoxFor(m => m.Price, new { @class = "form-control" })
+          @Html.ValidationMessageFor(m => m.Price)
+     </div>
+
+     <div class="form-group">
+          @Html.LabelFor(m => m.Stock)
+          @Html.TextBoxFor(m => m.Stock, new { @class = "form-control" })
+          @Html.ValidationMessageFor(m => m.Stock)
+     </div>
+
+     <div class="form-group">
+          <label for="ProductImage">Product Image</label>
+          <input type="file" name="ProductImage" class="form-control" />
+     </div>
+
+     <button type="submit" class="btn btn-primary">Add Product</button>
+}
