@@ -19,5 +19,10 @@ namespace Shop.BusinessLogic
           {
                return new SessionBL();
           }
+
+          public ICart GetCartBL()
+          {
+               return new CartBL();
+          }
      }
 }

@@ -55,14 +55,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CartBL.cs" />
     <Compile Include="Core\BusinessLogic.cs" />
     <Compile Include="Core\AdminApi.cs" />
+    <Compile Include="Core\CartApi.cs" />
     <Compile Include="Core\ProductApi.cs" />
     <Compile Include="Core\UserApi.cs" />
     <Compile Include="DBDataContext\SessionContext.cs" />
     <Compile Include="DBDataContext\ShopContext.cs" />
     <Compile Include="DBDataContext\UserContext.cs" />
-    <Compile Include="Interface\IAuth.cs" />
+    <Compile Include="Interface\ICart.cs" />
     <Compile Include="Interface\IProduct.cs" />
     <Compile Include="Interface\ISession.cs" />
     <Compile Include="ProductBL.cs" />
