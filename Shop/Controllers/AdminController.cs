@@ -19,18 +19,19 @@ namespace Shop.Controllers
      [AdminMod]
     public class AdminController : Controller
     {
-          private readonly ShopContext _db = new ShopContext();
-          private readonly ProductApi _productApi = new ProductApi();
+          private readonly IProduct _productApi;
 
           public AdminController()
           {
-              
+               var bl = new BusinessLogic.BusinessLogic();
+               _productApi = bl.GetProductBL();
+
           }
           
           //Dashboard
           public ActionResult Index()
           {
-               var products = _db.Products.ToList();
+               var products = _productApi.GetAllProducts();
                return View(products);
           }
 

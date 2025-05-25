@@ -1,5 +1,6 @@
 ﻿using Shop.BusinessLogic.Core;
 using Shop.BusinessLogic.Interface;
+using Shop.Domain.Model.Product;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,16 +9,16 @@ using System.Threading.Tasks;
 
 namespace Shop.BusinessLogic
 {
-     public class BusinessLogic
+     public class ProductBL : ProductApi, IProduct
      {
-          public IProduct GetProductBL()
+          public bool AddProductLogic(ProductDO product)
           {
-               return new ProductBL();
+               return AddProduct(product);
           }
 
-          public ISession GetSessionBL()
+          public List<ProductDO> GettAllProductsAction()
           {
-               return new SessionBL();
+               return GetAllProducts();
           }
      }
 }

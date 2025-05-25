@@ -55,7 +55,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLStruct\AuthBL.cs" />
     <Compile Include="Core\BusinessLogic.cs" />
     <Compile Include="Core\AdminApi.cs" />
     <Compile Include="Core\ProductApi.cs" />
@@ -64,7 +63,9 @@
     <Compile Include="DBDataContext\ShopContext.cs" />
     <Compile Include="DBDataContext\UserContext.cs" />
     <Compile Include="Interface\IAuth.cs" />
+    <Compile Include="Interface\IProduct.cs" />
     <Compile Include="Interface\ISession.cs" />
+    <Compile Include="ProductBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionBL.cs" />
   </ItemGroup>

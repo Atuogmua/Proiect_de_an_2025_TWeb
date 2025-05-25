@@ -5,12 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Shop.BusinessLogic.DBDataContext;
+using Shop.BusinessLogic.Interface;
 using Shop.Domain.Model.Product;
 
 namespace Shop.BusinessLogic.Core
 {
-     public class ProductApi
+     public class ProductApi : IProduct
      {
+          private readonly ShopContext _db = new ShopContext();
           private readonly IMapper _mapper;
 
           public ProductApi()
@@ -33,5 +35,11 @@ namespace Shop.BusinessLogic.Core
                     return db.SaveChanges() > 0;
                }   
           }
+
+          public List<ProductDO> GetAllProducts() 
+          {
+               return _db.Products.ToList();
+          }
+
      }
 }
