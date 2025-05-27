@@ -13,7 +13,7 @@ namespace Shop.Models
           public string Name { get; set; }
           public string Description { get; set; }
           public string ProductImagePath {  get; set; }
-          public float Price {  get; set; }
+          public decimal Price {  get; set; }
           public DateTime LastTimeUpdated { get; set; }
           public string CompanyName { get; set; }
           public string Status { get; set; }

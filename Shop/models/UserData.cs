@@ -8,7 +8,7 @@ namespace Shop.Models
           public string Username { get; set; }
           [DataType(DataType.Password)]
           public string Password { get; set; }
-          public List<string> Products { get; set; }
-          public string SingleProduct { get; set; }
+          public List<Product> Products { get; set; }
+          public Product SingleProduct { get; set; }
      }
 }

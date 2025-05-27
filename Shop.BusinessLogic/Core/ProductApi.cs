@@ -10,7 +10,7 @@ using Shop.Domain.Model.Product;
 
 namespace Shop.BusinessLogic.Core
 {
-     public class ProductApi : IProduct
+     public class ProductApi
      {
           private readonly ShopContext _db = new ShopContext();
           private readonly IMapper _mapper;
@@ -26,7 +26,7 @@ namespace Shop.BusinessLogic.Core
                _mapper = config.CreateMapper();
           }
 
-          public bool AddProduct(ProductDO product)
+          public bool AddProductLogic(ProductDO product)
           {
                using (var db = new ShopContext())
                {
@@ -36,9 +36,35 @@ namespace Shop.BusinessLogic.Core
                }   
           }
 
-          public List<ProductDO> GetAllProducts() 
+          public List<ProductDO> GetAllProductsAction() 
           {
-               return _db.Products.ToList();
+               return _db.Products.Select(p => new ProductDO
+               {
+                    ID = p.Id,
+                    Name = p.Name,
+                    Price = p.Price,
+                    Description = p.Description,
+                    Stock = p.Stock,
+                    ProductImagePath = p.ProductImagePath
+               }).ToList();
+          }
+
+          public ProductDO GetProductByIdAction(int id)
+          {
+               var product = _db.Products.FirstOrDefault(p => p.Id == id);
+               if (product == null)
+                    return null;
+
+               return new ProductDO
+               {
+                    ID = product.Id,
+                    Name = product.Name,
+                    Description = product.Description,
+                    Price = product.Price,
+                    Stock = product.Stock,
+                    ProductImagePath = product.ProductImagePath
+               };
+
           }
 
      }

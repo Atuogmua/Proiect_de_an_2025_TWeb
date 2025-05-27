@@ -11,5 +11,6 @@ namespace Shop.BusinessLogic.Interface
      {
           bool AddProduct(ProductDO product);
           List<ProductDO> GetAllProducts();
+          ProductDO GetProductById(int id);
      }
 }

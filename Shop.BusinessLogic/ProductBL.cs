@@ -11,14 +11,19 @@ namespace Shop.BusinessLogic
 {
      public class ProductBL : ProductApi, IProduct
      {
-          public bool AddProductLogic(ProductDO product)
+          public bool AddProduct(ProductDO product)
           {
-               return AddProduct(product);
+               return AddProductLogic(product);
           }
 
-          public List<ProductDO> GettAllProductsAction()
+          public List<ProductDO> GetAllProducts()
           {
-               return GetAllProducts();
+               return GetAllProductsAction();
+          }
+
+          public ProductDO GetProductById(int id) 
+          { 
+               return GetProductByIdAction(id);
           }
      }
 }

@@ -10,8 +10,9 @@ namespace Shop.Domain.Model.Product
 {
      public class ProductDO
      {
+          public int ID { get; set; }
           public string Name { get; set; }
-          public float Price { get; set; }
+          public decimal Price { get; set; }
           public int Stock { get; set; }
           public string Description { get; set; }
           public string ProductImagePath { get; set; }

@@ -14,12 +14,14 @@ namespace Shop.Controllers
      public class HomeController : BaseController
      {
           private readonly ISession _session;
+          private readonly IProduct _product;
           private readonly IMapper _mapper;
-
+          
           public HomeController()
           {
                var bl = new BusinessLogic.BusinessLogic();
                _session = bl.GetSessionBL();
+               _product = bl.GetProductBL();
 
                var config = new MapperConfiguration(cfg =>
                {
@@ -31,28 +33,55 @@ namespace Shop.Controllers
 
           public ActionResult Index()
           {
-               var user = GetLoggedInUser();
+               SessionStatus();
+
+               var cookieValue = Request.Cookies["X-KEY"];
+               if(cookieValue == null || string.IsNullOrEmpty(cookieValue.Value))
+               {
+                    return RedirectToAction("Login", "Auth");
+               }
+
+               var user = _session.GetUserByCookie(cookieValue.Value);
                if (user == null) 
                {
                     return RedirectToAction("Login", "Auth");
                }
 
-               var u = _mapper.Map<UserData>(user);
+               var products = _product.GetAllProducts();
+               var mappedProducts = _mapper.Map<List<Product>>(products);
+
+               var u = new UserData
+               {
+                    Username = user.Username,
+                    Products = mappedProducts
+               };
+
                return View(u);
           }
 
           public ActionResult Product()
           {
-               var user = GetLoggedInUser();
-               if (user == null)
+               var cookie = Request.Cookies["X-KEY"];
+               var user = _session.GetUserByCookie(cookie?.Value);
+
+               if (!int.TryParse(Request.QueryString["p"], out int productId))
                {
-                    return RedirectToAction("Login", "Auth");
+                    return RedirectToAction("Error404");
                }
 
-               var product = Request.QueryString["p"];
+               var product = _product.GetProductById(productId);
+               if (product == null)
+               {
+                    return RedirectToAction("Error404");
+               }
 
-               var u = _mapper.Map<UserData>(user);
-               u.SingleProduct = product;
+               var mappedProduct = _mapper.Map<Product>(product);
+               
+               UserData u = new UserData
+               {
+                    Username = user?.Username ?? "Customer",
+                    SingleProduct = mappedProduct
+               };
 
                return View(u);
           }
@@ -78,15 +107,6 @@ namespace Shop.Controllers
           public ActionResult Error404()
           {
                return View();
-          }
-
-          private UMinimal GetLoggedInUser()
-          {
-               var cookie = Request.Cookies["X-KEY"];
-               if (cookie == null)
-                    return null;
-
-               return _session.GetUserByCookie(cookie.Value);
           }
      }
 }

@@ -192,6 +192,7 @@ namespace Shop.BusinessLogic.Core
                return _mapper.Map<UMinimal>(curentUser);
 
 
-          }     
+          }
+          
      }
 }

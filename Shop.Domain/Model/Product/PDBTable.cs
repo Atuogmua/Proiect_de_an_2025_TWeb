@@ -16,12 +16,14 @@ namespace Shop.Domain.Model.Product
           [Required]
           public string Name { get; set; }
           [Required]
-          public float Price { get; set; }
+          public decimal Price { get; set; }
           [Required]
           public int Stock { get; set; }
           public string Description { get; set; }
           [Required]
           public DataType CreatedAtTime { get; set; }
+
+          public string ProductImagePath { get; set; }
 
      }
 }

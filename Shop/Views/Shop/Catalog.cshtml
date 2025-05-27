@@ -1,30 +1,92 @@
-﻿
+﻿@model List<Shop.Models.Product>
 @{
+     ViewBag.Title = "Shop - Product Catalog";
      Layout = "~/Views/Shared/_Layout.cshtml";
-     ViewBag.Title = "Catalog";
 }
 
-@model IEnumerable<Shop.Domain.Model.Product.ProductDO>
-
-
-<h2>Product Catalog</h2>
-
-<div class="row">
-     @foreach (var item in Model)
-     {
-          <div class="col-md-4">
-               <div class="card" style="margin-bottom: 20px;">
-                    <img src="@item.ProductImagePath" class="card-img-top" alt="@item.Name" style="max-height:200px;">
-                    <div class="card-body">
-                         <a href="@Url.Action("Details", "Product", new { id = item.Id })">
-                              <h5 class="card-title">@item.Name</h5>
-                         </a>
-                         <p class="card-text">@item.Description</p>
-                         <p><strong>Price:</strong> $@item.Price</p>
-                         <p><strong>Stock:</strong> @item.Stock</p>
+<!-- Start Hero Section -->
+<div class="hero">
+     <div class="container">
+          <div class="row justify-content-between">
+               <div class="col-lg-5">
+                    <div class="intro-excerpt">
+                         <h1>Shop</h1>
                     </div>
                </div>
+               <div class="col-lg-7">
+                    <!-- Empty for design consistency -->
+               </div>
           </div>
-     }
+     </div>
+</div>
+<!-- End Hero Section -->
+
+<div class="untree_co-section product-section before-footer-section">
+     <div class="container">
+          <div class="row">
+
+               @if (Model != null && Model.Any())
+               {
+                    foreach (var product in Model)
+                    {
+                         <!-- Start Product Column -->
+                         <div class="col-12 col-md-4 col-lg-3 mb-5">
+                              <a class="product-item" href="@Url.Action("ProductPage", "Shop", new { ProductID = product.Id })">
+                                   @if (!string.IsNullOrEmpty(product.ProductImagePath))
+                                   {
+                                        <img src="@product.ProductImagePath" class="img-fluid product-thumbnail" alt="@product.Name">
+                                   }
+                                   else
+                                   {
+                                        <img src="~/images/product-1.png" class="img-fluid product-thumbnail" alt="@product.Name">
+                                   }
+                                   <h3 class="product-title">@product.Name</h3>
+                                   <strong class="product-price">@product.Price.ToString("C")</strong>
+
+                                   <span class="icon-cross">
+                                        <img src="~/images/cross.svg" class="img-fluid">
+                                   </span>
+                              </a>
+                         </div>
+                         <!-- End Product Column -->
+                    }
+               }
+               else
+               {
+                    <!-- No Products Available -->
+                    <div class="col-12">
+                         <div class="text-center py-5">
+                              <h3 class="mb-3">No Products Available</h3>
+                              <p class="text-muted">Sorry, there are currently no products in our catalog. Please check back later!</p>
+                              <a href="@Url.Action("Index", "Home")" class="btn btn-primary">
+                                   <span class="fa fa-home me-2"></span>Back to Home
+                              </a>
+                         </div>
+                    </div>
+               }
+
+          </div>
+     </div>
 </div>
 
+@section Scripts {
+     <script>
+          $(document).ready(function () {
+               // Add hover effects for product items
+               $('.product-item').hover(
+                    function () {
+                         $(this).find('.icon-cross').addClass('animate__animated animate__rotateIn');
+                    },
+                    function () {
+                         $(this).find('.icon-cross').removeClass('animate__animated animate__rotateIn');
+                    }
+               );
+
+               // Add click tracking for analytics (optional)
+               $('.product-item').click(function () {
+                    var productName = $(this).find('.product-title').text();
+                    console.log('Product clicked: ' + productName);
+               });
+          });
+     </script>
+}

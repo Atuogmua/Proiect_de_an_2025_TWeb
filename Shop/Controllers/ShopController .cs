@@ -16,6 +16,14 @@ namespace Shop.Controllers
           private readonly IProduct _product;
           private readonly IMapper _mapper;
 
+          private void SetUserData()
+          {
+               var userData = Session["UserData"] as UserData;
+               if (userData != null) 
+               {
+                    ViewBag.UserData = userData;
+               }
+          }
 
           public ShopController()
           {
@@ -33,18 +41,21 @@ namespace Shop.Controllers
           
           public ActionResult Catalog()
           {
+               SetUserData();
                var productDOList = _product.GetAllProducts();
                var products = _mapper.Map<List<Product>>(productDOList);
                return View(products);
           }
           public ActionResult CheckOut()
           {
+               SetUserData();
                var cart = Session["Cart"] as List<CartItem> ?? new List<CartItem>();
                return View();
           }
 
           public ActionResult ProductPage(int ProductID)
           {
+               SetUserData();
                var product = _product.GetProductById(ProductID);
 
                if (product == null)
