@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AutoMapper;
+using Shop.BusinessLogic.Interface;
+using Shop.Domain.Model.User;
 using Shop.Extension;
 using Shop.Models;
 
@@ -10,30 +13,45 @@ namespace Shop.Controllers
 {
      public class HomeController : BaseController
      {
-        // GET: Home
+          private readonly ISession _session;
+          private readonly IMapper _mapper;
+
+          public HomeController()
+          {
+               var bl = new BusinessLogic.BusinessLogic();
+               _session = bl.GetSessionBL();
+
+               var config = new MapperConfiguration(cfg =>
+               {
+                    cfg.CreateMap<UMinimal, UserData>();
+               });
+
+               _mapper = config.CreateMapper();
+          }
+
           public ActionResult Index()
           {
-               SessionStatus();
-               if ((string)System.Web.HttpContext.Current.Session["LoginStatus"] != "login")
+               var user = GetLoggedInUser();
+               if (user == null) 
                {
                     return RedirectToAction("Login", "Auth");
                }
 
-               var user = System.Web.HttpContext.Current.GetMySessionObject();
-               UserData u = new UserData
-               {
-                    Username = user.Username,
-                    Products = new List<string> { "Product #1", "Product #2", "Product #3" }
-               };
+               var u = _mapper.Map<UserData>(user);
                return View(u);
           }
 
           public ActionResult Product()
           {
+               var user = GetLoggedInUser();
+               if (user == null)
+               {
+                    return RedirectToAction("Login", "Auth");
+               }
+
                var product = Request.QueryString["p"];
 
-               UserData u = new UserData();
-               u.Username = "Customer";
+               var u = _mapper.Map<UserData>(user);
                u.SingleProduct = product;
 
                return View(u);
@@ -56,6 +74,19 @@ namespace Shop.Controllers
           {
                return View();
           }
-          
-    }
+
+          public ActionResult Error404()
+          {
+               return View();
+          }
+
+          private UMinimal GetLoggedInUser()
+          {
+               var cookie = Request.Cookies["X-KEY"];
+               if (cookie == null)
+                    return null;
+
+               return _session.GetUserByCookie(cookie.Value);
+          }
+     }
 }

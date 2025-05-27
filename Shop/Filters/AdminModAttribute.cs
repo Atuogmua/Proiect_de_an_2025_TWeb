@@ -33,7 +33,7 @@ namespace Shop.Filters
                     }
                     else
                     {
-                         filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { controller = "Error", action = "Error404" }));
+                         filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { controller = "Home", action = "Error404" }));
                     }
                }
           }

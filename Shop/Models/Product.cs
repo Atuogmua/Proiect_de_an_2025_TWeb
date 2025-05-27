@@ -17,7 +17,7 @@ namespace Shop.Models
           public DateTime LastTimeUpdated { get; set; }
           public string CompanyName { get; set; }
           public string Status { get; set; }
-          public int ProductQuantity { get; set; }
+          public int Stock { get; set; }
 
      }
 }
