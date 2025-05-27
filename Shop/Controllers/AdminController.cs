@@ -19,20 +19,29 @@ namespace Shop.Controllers
      [AdminMod]
     public class AdminController : Controller
     {
-          private readonly IProduct _productApi;
+          private readonly IProduct _product;
+          private readonly IMapper _mapper;
 
           public AdminController()
           {
                var bl = new BusinessLogic.BusinessLogic();
-               _productApi = bl.GetProductBL();
+               _product = bl.GetProductBL();
 
+               var config = new MapperConfiguration(cfg =>
+               {
+                    cfg.CreateMap<ProductDO, Product>();
+                    cfg.CreateMap<Product, ProductDO>();
+               });
+
+               _mapper = config.CreateMapper();
           }
           
           //Dashboard
           public ActionResult Index()
           {
-               var products = _productApi.GetAllProducts();
-               return View(products);
+               var products = _product.GetAllProducts();
+               var viewProducts = _mapper.Map<List<Product>>(products);
+               return View(viewProducts);
           }
 
           public ActionResult ManageUsers()
@@ -62,7 +71,7 @@ namespace Shop.Controllers
                     product.ProductImagePath = "/ProductImages/" + fileName;
                }
 
-               bool success = _productApi.AddProduct(product);
+               bool success = _product.AddProduct(product);
                if (success)
                {
                     return RedirectToAction("Index", "Admin");

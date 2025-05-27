@@ -31,7 +31,6 @@ namespace Shop.Controllers
 
                _mapper = config.CreateMapper();
           }
-          // GET: Auth
           public ActionResult Index()
           {
                return View();
