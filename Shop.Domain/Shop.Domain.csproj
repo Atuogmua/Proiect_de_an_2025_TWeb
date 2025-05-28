@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\URole.cs" />
+    <Compile Include="Model\Order\OrderDO.cs" />
+    <Compile Include="Model\Order\OrderItemDO.cs" />
     <Compile Include="Model\Product\CartItemDO.cs" />
     <Compile Include="Model\Product\PDBTable.cs" />
     <Compile Include="Model\Product\ProductDO.cs" />

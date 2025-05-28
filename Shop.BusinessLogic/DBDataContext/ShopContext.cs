@@ -1,4 +1,5 @@
-﻿using Shop.Domain.Model.Product;
+﻿using Shop.Domain.Model.Order;
+using Shop.Domain.Model.Product;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -12,5 +13,7 @@ namespace Shop.BusinessLogic.DBDataContext
      {
           public ShopContext() : base("name=Shop") { }
           public DbSet<PDBTable> Products { get; set; }
+          public DbSet<OrderDO> Orders { get; set; }
+          public DbSet<OrderItemDO> OrderItems { get; set; }
      }
 }

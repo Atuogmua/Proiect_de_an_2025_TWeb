@@ -24,5 +24,10 @@ namespace Shop.BusinessLogic
           {
                return new CartBL();
           }
+
+          public IOrder GetOrderBL()
+          {
+               return new OrderBL();
+          }
      }
 }
