@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,6 +49,33 @@ namespace Shop.BusinessLogic.Core
                     ProductImagePath = p.ProductImagePath
                }).ToList();
           }
+
+          public bool UpdateProduct(ProductDO product)
+          {
+               var entityProduct = _db.Products.Find(product.ID);
+
+               if (entityProduct == null)
+               {
+                    return false;
+               }
+
+               entityProduct.Name = product.Name;
+               entityProduct.Description = product.Description;
+               entityProduct.Price = product.Price;
+               entityProduct.Stock = product.Stock;
+
+               if (!string.IsNullOrEmpty(product.ProductImagePath))
+               {
+                    entityProduct.ProductImagePath = product.ProductImagePath;
+               }
+
+               _db.Entry(entityProduct).State = EntityState.Modified;
+               _db.SaveChanges();
+
+               return true;              
+               
+          }
+
 
           public ProductDO GetProductByIdAction(int id)
           {

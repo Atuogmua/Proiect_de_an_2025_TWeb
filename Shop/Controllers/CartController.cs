@@ -51,7 +51,6 @@ namespace Shop.Controllers
           {
                var cartDO = Session["Cart"] as List<CartItemDO> ?? new List<CartItemDO>();
 
-               // Convert CartItemDO to CartItem for the view
                var cart = cartDO.Select(item => _mapper.Map<CartItem>(item)).ToList();
 
                return View(cart);
@@ -64,7 +63,6 @@ namespace Shop.Controllers
                {
                     var cartDO = Session["Cart"] as List<CartItemDO> ?? new List<CartItemDO>();
 
-                    // Update quantities based on form input
                     foreach (var item in cartItems)
                     {
                          var existingItem = cartDO.FirstOrDefault(x => x.ProductId == item.ProductId);

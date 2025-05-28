@@ -32,20 +32,26 @@
                          <!-- Start Product Column -->
                          <div class="col-12 col-md-4 col-lg-3 mb-5">
                               <a class="product-item" href="@Url.Action("ProductPage", "Shop", new { ProductID = product.Id })">
-                                   @if (!string.IsNullOrEmpty(product.ProductImagePath))
-                                   {
-                                        <img src="@product.ProductImagePath" class="img-fluid product-thumbnail" alt="@product.Name">
-                                   }
-                                   else
-                                   {
-                                        <img src="~/images/product-1.png" class="img-fluid product-thumbnail" alt="@product.Name">
-                                   }
+                                   <td class="product-thumbnail">
+                                        @if (!string.IsNullOrEmpty(product.ProductImagePath))
+                                        {
+                                             <img src="@Url.Content("/Content/images/" + product.ProductImagePath)"
+                                                  alt="@product.Name"
+                                                  class="img-fluid cart-product-image"
+                                                  style="max-width: 200px; max-height: 200px; object-fit: cover;"
+                                                  onerror="this.src='@Url.Content("/Content/images/default-image.png")'; this.onerror=null;">
+                                        }
+                                        else
+                                        {
+                                             <img src="@Url.Content("/Content/images/default-image.png")"
+                                                  alt="Default Product Image"
+                                                  class="img-fluid cart-product-image"
+                                                  style="max-width: 80px; max-height: 80px; object-fit: cover;">
+                                        }
+                                   </td>
                                    <h3 class="product-title">@product.Name</h3>
                                    <strong class="product-price">@product.Price.ToString("C")</strong>
 
-                                   <span class="icon-cross">
-                                        <img src="~/images/cross.svg" class="img-fluid">
-                                   </span>
                               </a>
                          </div>
                          <!-- End Product Column -->

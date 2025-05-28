@@ -17,6 +17,8 @@ namespace Shop.BusinessLogic.Core
 
           public OrderApi()
           {
+               _context = new ShopContext();
+
                var config = new MapperConfiguration(cfg =>
                {
                     cfg.CreateMap<OrderDO, OrderItemDO>();

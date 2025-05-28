@@ -1,44 +1,59 @@
-﻿@* Remove the @model declaration completely *@
-<div class="container">
+﻿<div class="container">
      <a class="navbar-brand" href="@Url.Action("Index","Home")">Eden<span>.</span></a>
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
      </button>
      <div class="collapse navbar-collapse" id="navbarsFurni">
           <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-               <li class="nav-item ">
+               <li class="nav-item">
                     <a class="nav-link" href="@Url.Action("Index","Home")">Home</a>
                </li>
-               <li><a class="nav-link" href="@Url.Action("Catalog","Shop")">Shop</a></li>
-               <li><a class="nav-link" href="@Url.Action("AboutUs","Home")">About us</a></li>
-               <li><a class="nav-link" href="@Url.Action("Services","Home")">Services</a></li>
-               <li><a class="nav-link" href="@Url.Action("ContactUs","Home")">Contact us</a></li>
+               <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Catalog","Shop")">Shop</a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("AboutUs","Home")">About us</a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Services","Home")">Services</a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("ContactUs","Home")">Contact us</a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("UserPage","Auth")">Your Profile</a>
+               </li>
+
           </ul>
           <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-               <li>
+               <li class="nav-item">
                     @if (ViewBag.UserData != null)
                     {
-                         <a class="nav-link" href="@Url.Action("UserPage","Auth")">
-                              <span class="profile-address">@ViewBag.UserData.Username</span>
+                         <a class="nav-link d-flex align-items-center" href="@Url.Action("UserPage","Auth")">
+                              <span class="profile-address me-2">@ViewBag.UserData.Username</span>
                               @if (!string.IsNullOrEmpty(ViewBag.UserData.ProfilePicture))
                               {
-                                   <img src="@ViewBag.UserData.ProfilePicture" alt="Profile" style="width: 24px; height: 24px; border-radius: 50%; margin-left: 5px;">
+                                   <img src="@ViewBag.UserData.ProfilePicture" alt="Profile" class="rounded-circle" style="width: 24px; height: 24px;">
                               }
                               else
                               {
-                                   <img src="/Content/images/user.svg" alt="User">
+                                   <img src="/Content/images/user.svg" alt="User" style="width: 24px; height: 24px;">
                               }
                          </a>
                     }
                     else
                     {
-                         <a class="nav-link" href="@Url.Action("Login","Auth")">
-                              <span class="profile-address">Login</span>
-                              <img src="/Content/images/user.svg" alt="User">
+                         <a class="nav-link d-flex align-items-center" href="@Url.Action("Login","Auth")">
+                              <span class="profile-address me-2">Login</span>
+                              <img src="/Content/images/user.svg" alt="User" style="width: 24px; height: 24px;">
                          </a>
                     }
                </li>
-               <li><a class="nav-link" href="@Url.Action("Index","Cart")"><img src="/Content/images/cart.svg"></a></li>
+               <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index","Cart")">
+                         <img src="/Content/images/cart.svg" alt="Cart" style="width: 24px; height: 24px;">
+                    </a>
+               </li>
           </ul>
      </div>
 </div>

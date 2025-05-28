@@ -11,6 +11,7 @@
 @using (Html.BeginForm("AddProduct", "Admin", FormMethod.Post))
 {
      @Html.AntiForgeryToken()
+     @Html.HiddenFor(m => m.ProductImagePath)
 
      <div class="form-group">
           @Html.LabelFor(m => m.Name)
@@ -37,8 +38,42 @@
 
      <div class="form-group">
           <label for="ProductImage">Product Image</label>
-          <input type="file" name="ProductImage" class="form-control" />
+
+          <!-- Display current image if exists -->
+          @if (!string.IsNullOrEmpty(Model?.ProductImagePath))
+          {
+               <div class="current-image mb-3">
+                    <p><strong>Current Image:</strong></p>
+                    <img src="@Url.Content("/Content/images/" + Model.ProductImagePath)"
+                         alt="Current Product Image"
+                         class="img-thumbnail"
+                         style="max-width: 200px; max-height: 200px;"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div style="display: none; color: #666; font-style: italic;">
+                         Image not found: @Model.ProductImagePath
+                    </div>
+               </div>
+          }
+
+          <input type="file" name="ProductImage" class="form-control" accept="image/*" />
+          <small class="form-text text-muted">
+               @if (!string.IsNullOrEmpty(Model?.ProductImagePath))
+               {
+                    <text>Choose a new image to replace the current one, or leave empty to keep the existing image.</text>
+               }
+               else
+               {
+                    <text>Select an image file for this product.</text>
+               }
+          </small>
      </div>
 
-     <button type="submit" class="btn btn-primary">Add Product</button>
+     <button type="submit" class="btn btn-primary">
+          @(Model?.ID > 0 ? "Update Product" : "Add Product")
+     </button>
+
+     if (Model?.ID > 0)
+     {
+          <a href="@Url.Action("Index", "Admin")" class="btn btn-secondary">Cancel</a>
+     }
 }

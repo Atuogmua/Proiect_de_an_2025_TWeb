@@ -15,7 +15,24 @@
                     <div class="col">
                          <div class="card h-100 shadow-sm">
                               <div class="card-body">
-                                   <h5 class="card-title">@prod</h5>
+                                   <h5 class="card-title">@prod.Name</h5>
+                                   <td class="product-thumbnail">
+                                        @if (!string.IsNullOrEmpty(prod.ProductImagePath))
+                                        {
+                                             <img src="@Url.Content("/Content/images/" + prod.ProductImagePath)"
+                                                  alt="@prod.Name"
+                                                  class="img-fluid cart-product-image"
+                                                  style="max-width: 200px; max-height: 200px; object-fit: cover;"
+                                                  onerror="this.src='@Url.Content("/Content/images/default-image.png")'; this.onerror=null;">
+                                        }
+                                        else
+                                        {
+                                             <img src="@Url.Content("/Content/images/default-image.png")"
+                                                  alt="Default Product Image"
+                                                  class="img-fluid cart-product-image"
+                                                  style="max-width: 80px; max-height: 80px; object-fit: cover;">
+                                        }
+                                   </td>
                                    <p class="card-text">Explore more about this product.</p>
                               </div>
                               <div class="card-footer bg-white border-0">
