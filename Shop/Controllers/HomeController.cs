@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using AutoMapper;
 using Shop.BusinessLogic.Interface;
+using Shop.Domain.Model.Product;
 using Shop.Domain.Model.User;
 using Shop.Extension;
 using Shop.Models;
@@ -26,6 +27,7 @@ namespace Shop.Controllers
                var config = new MapperConfiguration(cfg =>
                {
                     cfg.CreateMap<UMinimal, UserData>();
+                    cfg.CreateMap<ProductDO, Product>();
                });
 
                _mapper = config.CreateMapper();

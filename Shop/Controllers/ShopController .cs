@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using Shop.BusinessLogic;
 using Shop.BusinessLogic.DBDataContext;
 using Shop.BusinessLogic.Interface;
+using Shop.Domain.Model.Order;
 using Shop.Domain.Model.Product;
 using Shop.Models;
 using System;
@@ -15,6 +17,8 @@ namespace Shop.Controllers
      {
           private readonly IProduct _product;
           private readonly IMapper _mapper;
+          private readonly IOrder _order;
+          private readonly ISession _session;
 
           private void SetUserData()
           {
@@ -29,11 +33,15 @@ namespace Shop.Controllers
           {
                var bl = new BusinessLogic.BusinessLogic();
                _product = bl.GetProductBL();
+               _order = bl.GetOrderBL();
+               _session = bl.GetSessionBL();
 
                var config = new MapperConfiguration(cfg =>
                {
                     cfg.CreateMap<ProductDO, Product>();
                     cfg.CreateMap<Product, ProductDO>();
+                    cfg.CreateMap<CartItem, CartItemDO>();
+                    cfg.CreateMap<CartItemDO, CartItem>();
                });
 
                _mapper = config.CreateMapper();
@@ -46,11 +54,37 @@ namespace Shop.Controllers
                var products = _mapper.Map<List<Product>>(productDOList);
                return View(products);
           }
-          public ActionResult CheckOut()
+          [HttpGet]
+          public ActionResult Checkout()
           {
-               SetUserData();
-               var cart = Session["Cart"] as List<CartItem> ?? new List<CartItem>();
-               return View();
+               var cart = (List<CartItem>)Session["Cart"] ?? new List<CartItem>();
+               return View(new Order { CartItems = cart });
+          }
+
+          [HttpPost]
+          public ActionResult Checkout(Order model)
+          {
+               var user = _session.GetUserByCookie(Request.Cookies["login"]?.Value);
+               if (user == null) return RedirectToAction("Login", "User");
+
+               var order = new OrderDO
+               {
+                    Username = user.Username,
+                    Address = model.Address,
+                    Notes = model.Notes,
+                    Items = model.CartItems.Select(i => new OrderItemDO
+                    {
+                         ProductId = i.ProductId,
+                         ProductName = i.Name,
+                         Quantity = i.Quantity,
+                         UnitPrice = i.Price
+                    }).ToList(),
+                    TotalPrice = model.TotalPrice
+               };
+
+               _order.PlaceOrderAction(order);
+               Session["Cart"] = null;
+               return RedirectToAction("ThankYou");
           }
 
           public ActionResult ProductPage(int ProductID)
@@ -66,6 +100,11 @@ namespace Shop.Controllers
                var vm = _mapper.Map<Product>(product);
 
                return View(vm);
+          }
+
+          public ActionResult ThankYou() 
+          {
+               return View();
           }
     }
 }

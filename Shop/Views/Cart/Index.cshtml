@@ -141,7 +141,6 @@
 
 <script>
 $(document).ready(function() {
-    // Handle quantity increase/decrease
     $('.increase').click(function() {
         var $quantityInput = $(this).closest('.quantity-container').find('.quantity-amount');
         var currentValue = parseInt($quantityInput.val());
@@ -156,7 +155,6 @@ $(document).ready(function() {
         }
     });
 
-    // Handle remove item confirmation
     $('.remove-item').click(function(e) {
         if (!confirm('Are you sure you want to remove this item from your cart?')) {
             e.preventDefault();

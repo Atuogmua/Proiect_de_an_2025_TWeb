@@ -279,6 +279,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\UserData.cs" />
     <Compile Include="Models\UserLogin.cs" />
@@ -317,6 +318,7 @@
     <Content Include="Views\Shop\ProductPage.cshtml" />
     <Content Include="Views\Cart\Index.cshtml" />
     <Content Include="Views\Home\Error404.cshtml" />
+    <Content Include="Views\Shop\ThankYou.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
