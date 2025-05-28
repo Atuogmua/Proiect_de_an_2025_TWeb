@@ -1,35 +1,36 @@
-﻿
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.Title = "Index";
+﻿@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+     ViewBag.Title = "Home";
 }
 @model Shop.Models.UserData
 
+<div class="container py-4">
+     <h2 class="mb-4">Welcome to Our Shop</h2>
 
-<div class=" row">
-    <div class="col-md-12">
-        <div class="table-responsive">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>Product</tr>
-                    <tr>Action</tr>
-                </thead>
-                <tbody>
-                    @using (Html.BeginForm("Product", "Home", FormMethod.Post, new { autocomplete = "off" }))
-                    {
-                        foreach (var prod in Model.Products)
-                        {
-                            <tr>
-                                <td>@prod</td>
-                                <td><button style="float: right" class="btn btn-primary btn-xs" name="btn" type="submit" value="@prod">View</button></td>
-                            </tr>
-                        }
-                    }
-
-                </tbody>
-            </table>
-        </div>
-        
-    </div>
+     @if (Model.Products != null && Model.Products.Any())
+     {
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+               @foreach (var prod in Model.Products)
+               {
+                    <div class="col">
+                         <div class="card h-100 shadow-sm">
+                              <div class="card-body">
+                                   <h5 class="card-title">@prod</h5>
+                                   <p class="card-text">Explore more about this product.</p>
+                              </div>
+                              <div class="card-footer bg-white border-0">
+                                   @using (Html.BeginForm("Product", "Home", FormMethod.Post, new { autocomplete = "off" }))
+                                   {
+                                        <button class="btn btn-primary w-100" type="submit" name="btn" value="@prod">View Product</button>
+                                   }
+                              </div>
+                         </div>
+                    </div>
+               }
+          </div>
+     }
+     else
+     {
+          <div class="alert alert-info mt-3">No products available at the moment.</div>
+     }
 </div>
-

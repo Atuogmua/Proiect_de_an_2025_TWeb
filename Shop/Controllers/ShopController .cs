@@ -57,8 +57,10 @@ namespace Shop.Controllers
           [HttpGet]
           public ActionResult Checkout()
           {
-               var cart = (List<CartItem>)Session["Cart"] ?? new List<CartItem>();
+               var cartDO = Session["Cart"] as List<CartItemDO> ?? new List<CartItemDO>();
+               var cart = _mapper.Map<List<CartItem>>(cartDO);
                return View(new Order { CartItems = cart });
+
           }
 
           [HttpPost]

@@ -16,6 +16,6 @@ namespace Shop.Models
           public string Notes { get; set; }
 
           public List<CartItem> CartItems { get; set; }
-          public decimal TotalPrice => CartItems.Sum(i => (i.Price * i.Quantity));
+          public decimal TotalPrice => CartItems?.Sum(i => i.Price * i.Quantity) ?? 0;
      }
 }
