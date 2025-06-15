@@ -42,6 +42,7 @@ namespace Shop.Controllers
                     cfg.CreateMap<Product, ProductDO>();
                     cfg.CreateMap<CartItem, CartItemDO>();
                     cfg.CreateMap<CartItemDO, CartItem>();
+                    cfg.CreateMap<CartItemDO, OrderItemDO>();
                });
 
                _mapper = config.CreateMapper();
@@ -66,15 +67,16 @@ namespace Shop.Controllers
           [HttpPost]
           public ActionResult Checkout(Order model)
           {
-               var user = _session.GetUserByCookie(Request.Cookies["login"]?.Value);
-               if (user == null) return RedirectToAction("Login", "User");
+               var user = _session.GetUserByCookie(Request.Cookies["X-KEY"]?.Value);
+               if (user == null) return RedirectToAction("Login", "Auth");
+
+               var cartDO = Session["Cart"] as List<CartItemDO> ?? new List<CartItemDO>();
 
                var order = new OrderDO
                {
                     Username = user.Username,
                     Address = model.Address,
-                    Notes = model.Notes,
-                    Items = model.CartItems.Select(i => new OrderItemDO
+                    Items = cartDO.Select(i => new OrderItemDO
                     {
                          ProductId = i.ProductId,
                          ProductName = i.Name,
@@ -88,6 +90,7 @@ namespace Shop.Controllers
                Session["Cart"] = null;
                return RedirectToAction("ThankYou");
           }
+
 
           public ActionResult ProductPage(int ProductID)
           {

@@ -10,7 +10,6 @@ using Shop.BusinessLogic.Interface;
 using Shop.Domain.Model.Product;
 using AutoMapper;
 using Shop.Filters;
-using Shop.BusinessLogic.DBDataContext;
 using System.IO;
 
 namespace Shop.Controllers
@@ -49,7 +48,7 @@ namespace Shop.Controllers
           [HttpGet]
           public ActionResult AddProduct()
           {
-               return View(new ProductDO()); // Initialize with empty model
+               return View(new ProductDO());
           }
 
           [HttpPost]
@@ -61,12 +60,10 @@ namespace Shop.Controllers
                     return View(product);
                }
 
-               // Handle image upload
                if (ProductImage != null && ProductImage.ContentLength > 0)
                {
                     try
                     {
-                         // Validate file type
                          string[] allowedExtensions = { ".jpg", ".jpeg", ".png", ".gif", ".bmp" };
                          string fileExtension = Path.GetExtension(ProductImage.FileName).ToLower();
 
@@ -76,11 +73,9 @@ namespace Shop.Controllers
                               return View(product);
                          }
 
-                         // Create unique filename to avoid conflicts
                          string originalFileName = Path.GetFileNameWithoutExtension(ProductImage.FileName);
                          string uniqueFileName = $"{originalFileName}_{DateTime.Now:yyyyMMddHHmmss}{fileExtension}";
 
-                         // Ensure the images directory exists
                          string imagesDirectory = Server.MapPath("/Content/images/");
                          if (!Directory.Exists(imagesDirectory))
                          {
@@ -90,7 +85,6 @@ namespace Shop.Controllers
                          string path = Path.Combine(imagesDirectory, uniqueFileName);
                          ProductImage.SaveAs(path);
 
-                         // Set the image path in the product model
                          product.ProductImagePath = uniqueFileName;
                     }
                     catch (Exception ex)
@@ -100,7 +94,6 @@ namespace Shop.Controllers
                     }
                }
 
-               // Add the product to the database
                try
                {
                     bool success = _product.AddProduct(product);
@@ -122,7 +115,6 @@ namespace Shop.Controllers
                return View(product);
           }
 
-          // Additional method for editing products (if needed)
           [HttpGet]
           public ActionResult EditProduct(int id)
           {
@@ -131,7 +123,7 @@ namespace Shop.Controllers
                {
                     return HttpNotFound();
                }
-               return View("AddProduct", product); // Reuse the same view
+               return View("AddProduct", product); 
           }
 
           [HttpPost]
@@ -143,12 +135,10 @@ namespace Shop.Controllers
                     return View("AddProduct", product);
                }
 
-               // Handle image upload for editing
                if (ProductImage != null && ProductImage.ContentLength > 0)
                {
                     try
                     {
-                         // Validate file type
                          string[] allowedExtensions = { ".jpg", ".jpeg", ".png", ".gif", ".bmp" };
                          string fileExtension = Path.GetExtension(ProductImage.FileName).ToLower();
 
@@ -158,7 +148,6 @@ namespace Shop.Controllers
                               return View("AddProduct", product);
                          }
 
-                         // Delete old image if it exists
                          if (!string.IsNullOrEmpty(product.ProductImagePath))
                          {
                               string oldImagePath = Server.MapPath("/Content/images/" + product.ProductImagePath);
@@ -168,7 +157,6 @@ namespace Shop.Controllers
                               }
                          }
 
-                         // Save new image
                          string originalFileName = Path.GetFileNameWithoutExtension(ProductImage.FileName);
                          string uniqueFileName = $"{originalFileName}_{DateTime.Now:yyyyMMddHHmmss}{fileExtension}";
 

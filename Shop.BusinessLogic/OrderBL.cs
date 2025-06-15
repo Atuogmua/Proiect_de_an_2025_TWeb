@@ -13,7 +13,7 @@ namespace Shop.BusinessLogic
      public class OrderBL : OrderApi, IOrder
      {
 
-          public OrderDO PlaceOrderAction(OrderDO order)
+          public bool PlaceOrderAction(OrderDO order)
           {
                return PlaceOrder(order);
           }

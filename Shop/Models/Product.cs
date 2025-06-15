@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shop.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,8 @@ namespace Shop.Models
           public string CompanyName { get; set; }
           public string Status { get; set; }
           public int Stock { get; set; }
+          public PCategories Category { get; set; }
+
 
      }
 }

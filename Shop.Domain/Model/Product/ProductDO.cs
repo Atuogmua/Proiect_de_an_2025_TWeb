@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shop.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
@@ -15,6 +16,9 @@ namespace Shop.Domain.Model.Product
           public decimal Price { get; set; }
           public int Stock { get; set; }
           public string Description { get; set; }
+          public PCategories Category { get; set; }
+          public string CompanyName { get; set; }
+
           public string ProductImagePath { get; set; }
      }
 }

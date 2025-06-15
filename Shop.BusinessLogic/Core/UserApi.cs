@@ -10,6 +10,7 @@ using System.Data.Entity;
 using System.Web;
 using AutoMapper;
 using Shop.Domain.Enums;
+using Shop.Domain.Model.Order;
 
 
 namespace Shop.BusinessLogic.Core
@@ -19,6 +20,7 @@ namespace Shop.BusinessLogic.Core
 
           private readonly IMapper _mapper;
 
+
           public UserApi()
           {
                var config = new MapperConfiguration(cfg =>
@@ -27,6 +29,7 @@ namespace Shop.BusinessLogic.Core
                });
 
                _mapper = config.CreateMapper();
+
           }
           //-----------------------------AUTH--------------------------------
           internal ULoginResp UserLoginAction(UserLoginDO data)
@@ -164,8 +167,9 @@ namespace Shop.BusinessLogic.Core
 
           internal UMinimal UserCookie(string cookie)
           {
+               if (string.IsNullOrEmpty(cookie)) return null;
+
                Session session;
-               UDBTable curentUser;
 
                using (var db = new SessionContext())
                {
@@ -176,23 +180,84 @@ namespace Shop.BusinessLogic.Core
 
                using (var db = new UserContext())
                {
-                    var validate = new EmailAddressAttribute();
-                    if (validate.IsValid(session.UserName))
-                    {
-                         curentUser = db.Users.FirstOrDefault(u => u.Email == session.UserName);
-                    }
-                    else
-                    {
-                         curentUser = db.Users.FirstOrDefault(u => u.UserName == session.UserName);
+                    var currentUser = db.Users.FirstOrDefault(u =>
+                         u.UserName == session.UserName || u.Email == session.UserName);
 
-                    }
-                    if (curentUser == null) return null;
+                    if (currentUser == null) return null;
+
+                    return _mapper.Map<UMinimal>(currentUser);
                }
-
-               return _mapper.Map<UMinimal>(curentUser);
-
-
           }
-          
+
+
+          public UserProfileDO GetUserProfileAction(string username)
+          {
+               using (var db = new UserContext())
+               {
+                    var user = db.Users.FirstOrDefault(u => u.UserName == username);
+                    if (user == null) return null;
+
+                    return new UserProfileDO
+                    {
+                         Username = user.UserName,
+                         Email = user.Email,
+                         PhoneNumber = user.Phone,
+                    };
+               }
+          }
+
+
+          public bool UpdateUserProfileAction(UserProfileDO profile)
+          {
+               using (var db = new UserContext())
+               {
+                    var user = db.Users.FirstOrDefault(u => u.UserName == profile.Username);
+                    if (user == null) return false;
+
+                    user.Email = profile.Email;
+                    user.Phone = profile.PhoneNumber;
+
+                    db.SaveChanges();
+                    return true;
+               }
+          }
+
+
+          public List<OrderHistoryDO> GetUserOrderHistoryAction(string username)
+          {
+               using (var db = new OrderContext())
+               {
+                    return db.Orders
+                        .Include(o => o.Items)
+                        .Where(o => o.Username == username)
+                        .Select(o => new OrderHistoryDO
+                        {
+                             OrderId = o.Id,
+                             OrderDate = o.OrderDate,
+                             Address = o.Address,
+                             TotalPrice = o.TotalPrice,
+                             Items = o.Items.Select(i => new OrderItemDO
+                             {
+                                  ProductId = i.ProductId,
+                                  ProductName = i.ProductName,
+                                  Quantity = i.Quantity,
+                                  UnitPrice = i.UnitPrice
+                             }).ToList()
+                        }).ToList();
+               }
+          }
+
+
+          public string GetUsernameFromCookieAction(string cookieValue)
+          {
+               using (var db = new SessionContext())
+               {
+                    var session = db.Sessions.FirstOrDefault(s => s.CookieString == cookieValue);
+                    return session?.UserName;
+               }
+          }
+
+
+
      }
 }

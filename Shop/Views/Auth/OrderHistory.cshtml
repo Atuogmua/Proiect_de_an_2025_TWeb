@@ -1,0 +1,33 @@
+﻿@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+     ViewBag.Title = "OrderHistory";
+}
+
+@model List<Shop.Models.Order>
+
+<h2>Order History</h2>
+
+@if (!Model.Any())
+{
+     <p>You have no orders yet.</p>
+}
+else
+{
+     foreach (var order in Model)
+     {
+          <div class="card mt-3">
+               <div class="card-header">
+                    Order #@order.OrderId - @order.TotalPrice.ToString("C")
+               </div>
+               <div class="card-body">
+                    <p><strong>Address:</strong> @order.Address</p>
+                    <ul>
+                         @foreach (var item in order.CartItems)
+                         {
+                              <li>@item.Name (x@item.Quantity) – @item.Price.ToString("C")</li>
+                         }
+                    </ul>
+               </div>
+          </div>
+     }
+}

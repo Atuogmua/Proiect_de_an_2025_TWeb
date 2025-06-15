@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shop.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -22,7 +23,10 @@ namespace Shop.Domain.Model.Product
           public string Description { get; set; }
           [Required]
           public DataType CreatedAtTime { get; set; }
-
+          [Required]
+          public PCategories Category { get; set; }
+          [Required]
+          public string CompanyName { get; set; }
           public string ProductImagePath { get; set; }
 
      }

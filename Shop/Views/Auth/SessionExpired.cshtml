@@ -1,0 +1,11 @@
+﻿@model Shop.Models.UserLogin
+@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+     ViewBag.Title = "SessionExpired";
+}
+
+
+<h2>Your session has expired</h2>
+<p>For security reasons, your session has ended. Please log in again to continue.</p>
+
+<a href="@Url.Action("Login", "Auth")" class="btn btn-danger">Log In</a>

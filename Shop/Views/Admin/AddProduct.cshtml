@@ -37,6 +37,17 @@
      </div>
 
      <div class="form-group">
+          @Html.LabelFor(m => m.CompanyName)
+          @Html.TextBoxFor(m => m.CompanyName, new { @class = "form-control" })
+          @Html.ValidationMessageFor(m => m.CompanyName)
+     </div>
+
+     <div>
+          @Html.LabelFor(m => m.Category)
+          @Html.DropDownListFor(m => m.Category, Model.Category, "Select a Category")
+     </div>
+
+     <div class="form-group">
           <label for="ProductImage">Product Image</label>
 
           <!-- Display current image if exists -->

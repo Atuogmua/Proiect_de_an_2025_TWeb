@@ -46,7 +46,9 @@ namespace Shop.BusinessLogic.Core
                     Price = p.Price,
                     Description = p.Description,
                     Stock = p.Stock,
-                    ProductImagePath = p.ProductImagePath
+                    ProductImagePath = p.ProductImagePath,
+                    Category = p.Category,
+                    CompanyName = p.CompanyName
                }).ToList();
           }
 
@@ -63,6 +65,8 @@ namespace Shop.BusinessLogic.Core
                entityProduct.Description = product.Description;
                entityProduct.Price = product.Price;
                entityProduct.Stock = product.Stock;
+               entityProduct.CompanyName = product.CompanyName;
+               entityProduct.Category = product.Category;
 
                if (!string.IsNullOrEmpty(product.ProductImagePath))
                {
@@ -90,7 +94,9 @@ namespace Shop.BusinessLogic.Core
                     Description = product.Description,
                     Price = product.Price,
                     Stock = product.Stock,
-                    ProductImagePath = product.ProductImagePath
+                    ProductImagePath = product.ProductImagePath,
+                    Category = product.Category,
+                    CompanyName = product.CompanyName
                };
 
           }

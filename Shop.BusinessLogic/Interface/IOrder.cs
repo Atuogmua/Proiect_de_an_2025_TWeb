@@ -9,7 +9,7 @@ namespace Shop.BusinessLogic.Interface
 {
      public interface IOrder
      {
-          OrderDO PlaceOrderAction(OrderDO order);
+          bool PlaceOrderAction(OrderDO order);
           List<OrderDO> GetUserOrdersAction(string username);
      }
 }

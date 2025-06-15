@@ -42,8 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\PCategories.cs" />
     <Compile Include="Enums\URole.cs" />
+    <Compile Include="Model\Order\ODbTable.cs" />
     <Compile Include="Model\Order\OrderDO.cs" />
+    <Compile Include="Model\Order\OrderHistoryDO.cs" />
+    <Compile Include="Model\Order\OrderItemDb.cs" />
     <Compile Include="Model\Order\OrderItemDO.cs" />
     <Compile Include="Model\Product\CartItemDO.cs" />
     <Compile Include="Model\Product\PDBTable.cs" />
@@ -54,6 +58,7 @@
     <Compile Include="Model\User\UMinimal.cs" />
     <Compile Include="Model\User\URegisterDO.cs" />
     <Compile Include="Model\User\UserLoginDO.cs" />
+    <Compile Include="Model\User\UserProfileDO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

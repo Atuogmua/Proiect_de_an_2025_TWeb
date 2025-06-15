@@ -38,7 +38,6 @@ namespace Shop.Domain.Model.User
           [Display(Name ="login_dt")]
           public DateTime LastLoginDataTime { get; set; }
 
-
           public URole Level { get; set; }
 
      }

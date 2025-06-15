@@ -1,4 +1,5 @@
-﻿using Shop.Domain.Model.User;
+﻿using Shop.Domain.Model.Order;
+using Shop.Domain.Model.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,11 @@ namespace Shop.BusinessLogic.Interface
           HttpCookie GenCookie(string loginUsername);
           UMinimal GetUserByCookie(string cookieValue);
           ULoginResp RegisterUser(URegisterDO data);
+
+          UserProfileDO GetUserProfile(string username);
+          bool UpdateUserProfile(UserProfileDO profile);
+          List<OrderHistoryDO> GetUserOrderHistory(string username);
+          string GetUsernameFromCookie(string cookieValue);
 
      }
 }
