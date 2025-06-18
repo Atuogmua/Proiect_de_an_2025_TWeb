@@ -29,29 +29,54 @@
                          <div class="p-3 p-lg-5 border bg-white">
                               <div class="form-group row">
                                    <div class="col-md-6">
-                                        @Html.LabelFor(m => m.FirstName, "First Name", htmlAttributes: new { @class = "text-black" })
+                                        @Html.LabelFor(m => m.FirstName, "First Name", new { @class = "text-black" })
                                         @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
                                    </div>
                                    <div class="col-md-6">
-                                        @Html.LabelFor(m => m.LastName, "Last Name", htmlAttributes: new { @class = "text-black" })
+                                        @Html.LabelFor(m => m.LastName, "Last Name", new { @class = "text-black" })
                                         @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
                                    </div>
                               </div>
 
                               <div class="form-group">
-                                   @Html.LabelFor(m => m.Email, "Email Address", htmlAttributes: new { @class = "text-black" })
+                                   @Html.LabelFor(m => m.Email, "Email Address", new { @class = "text-black" })
                                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                   @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
                               </div>
 
                               <div class="form-group">
-                                   @Html.LabelFor(m => m.Address, "Address", htmlAttributes: new { @class = "text-black" })
+                                   @Html.LabelFor(m => m.Address, "Address", new { @class = "text-black" })
                                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                                   @Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })
                               </div>
 
                               <div class="form-group">
-                                   @Html.LabelFor(m => m.Phone, "Phone", htmlAttributes: new { @class = "text-black" })
+                                   @Html.LabelFor(m => m.Phone, "Phone", new { @class = "text-black" })
                                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
+                                   @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
                               </div>
+                         </div>
+
+                         <!-- Payment Method (Radio Only) -->
+                         <h2 class="h3 mb-3 text-black mt-4">Payment Method</h2>
+                         <div class="p-3 p-lg-5 border bg-white">
+                              <div class="form-group">
+                                   <label class="control-label">Select Payment Method</label>
+                                   @Html.ValidationMessageFor(m => m.PaymentMethod, "", new { @class = "text-danger" })
+
+                                   @foreach (var method in Enum.GetValues(typeof(Shop.Domain.Enums.PaymentMethod)).Cast<Shop.Domain.Enums.PaymentMethod>())
+                                   {
+                                        var id = "payment_" + (int)method;
+
+                                        <div class="form-check mb-2">
+                                             @Html.RadioButtonFor(m => m.PaymentMethod, method, new { @class = "form-check-input", id = id })
+                                             <label class="form-check-label" for="@id">@method.ToString()</label>
+                                        </div>
+                                   }
+                              </div>
+
                          </div>
                     </div>
 
@@ -71,16 +96,16 @@
                                         {
                                              <tr>
                                                   <td>@item.Name <strong class="mx-2">x</strong> @item.Quantity</td>
-                                                  <td>(@item.Price * @item.Quantity).ToString("C")</td>
+                                                  <td>@(item.Price * item.Quantity).ToString("C")</td>
                                              </tr>
                                         }
                                         <tr>
                                              <td class="text-black font-weight-bold"><strong>Cart Subtotal</strong></td>
-                                             <td class="text-black">@Model.TotalPrice.ToString("C")</td>
+                                             <td class="text-black">@Model.TotalPrice</td>
                                         </tr>
                                         <tr>
                                              <td class="text-black font-weight-bold"><strong>Order Total</strong></td>
-                                             <td class="text-black font-weight-bold"><strong>@Model.TotalPrice.ToString("C")</strong></td>
+                                             <td class="text-black font-weight-bold"><strong>@Model.TotalPrice</strong></td>
                                         </tr>
                                    </tbody>
                               </table>
@@ -90,10 +115,26 @@
                                         Place Order
                                    </button>
                               </div>
-
                          </div>
                     </div>
                </div>
           }
      </div>
 </div>
+
+<style>
+     .payment-methods .form-check {
+          padding: 10px;
+          border: 1px solid #e0e0e0;
+          border-radius: 5px;
+          transition: background-color 0.2s;
+     }
+
+          .payment-methods .form-check:hover {
+               background-color: #f8f9fa;
+          }
+
+     .payment-methods .form-check-input:checked + .form-check-label {
+          font-weight: bold;
+     }
+</style>

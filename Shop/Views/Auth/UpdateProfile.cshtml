@@ -1,0 +1,141 @@
+﻿@{
+     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+     ViewBag.Title = "Dashboard Overview";
+}
+
+<div class="container py-5">
+     <div class="mb-4">
+          <h2>Reports</h2>
+     </div>
+
+     <div class="row g-4">
+          <div class="col-md-4">
+               <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                         <div class="mb-3">
+                              <i class="bi bi-bag-fill display-4 text-primary"></i>
+                         </div>
+                         <h5 class="card-title">Orders</h5>
+                         <p class="card-text fs-4">5610</p>
+                    </div>
+               </div>
+          </div>
+          <div class="col-md-4">
+               <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                         <div class="mb-3">
+                              <i class="bi bi-cart-fill display-4 text-primary"></i>
+                         </div>
+                         <h5 class="card-title">Products</h5>
+                         <p class="card-text fs-4">23</p>
+                    </div>
+               </div>
+          </div>
+          <div class="col-md-4">
+               <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                         <div class="mb-3">
+                              <i class="bi bi-currency-dollar display-4 text-primary"></i>
+                         </div>
+                         <h5 class="card-title">Transactions</h5>
+                         <p class="card-text fs-4">1942</p>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <div class="my-5">
+          <h4>Revenue Summary</h4>
+          <ul class="list-group list-group-flush">
+               <li class="list-group-item d-flex justify-content-between">
+                    <span>Revenue</span>
+                    <strong>$4,800.00</strong>
+               </li>
+               <li class="list-group-item d-flex justify-content-between">
+                    <span>NET</span>
+                    <strong>$4,900.24</strong>
+               </li>
+               <li class="list-group-item d-flex justify-content-between">
+                    <span>Pending Orders</span>
+                    <strong>$1,600.50</strong>
+               </li>
+               <li class="list-group-item d-flex justify-content-between">
+                    <span>Due</span>
+                    <strong>$6,900.10</strong>
+               </li>
+               <li class="list-group-item d-flex justify-content-between">
+                    <span>Overdue</span>
+                    <strong>$6,500.80</strong>
+               </li>
+          </ul>
+     </div>
+
+     <div class="my-5">
+          <h4>Latest Customers</h4>
+          <div class="table-responsive">
+               <table class="table table-bordered align-middle">
+                    <thead class="table-light">
+                         <tr>
+                              <th>Name</th>
+                              <th>Orders</th>
+                              <th>Amount Spent</th>
+                              <th>Onboarded</th>
+                              <th>Joined</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                              <td>
+                                   <img src="/assets/avatars/avatar-fabiano-jorioz.jpg" class="rounded-circle me-2" width="32" />
+                                   Fabiano Jorioz
+                              </td>
+                              <td>2</td>
+                              <td>$684.45</td>
+                              <td><span class="badge bg-success">Yes</span></td>
+                              <td>2 days ago</td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <img src="/assets/avatars/avatar-meggie-heinonen.jpg" class="rounded-circle me-2" width="32" />
+                                   Meggie Heinonen
+                              </td>
+                              <td>0</td>
+                              <td>$0.00</td>
+                              <td><span class="badge bg-secondary">No</span></td>
+                              <td>2 days ago</td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <img src="/assets/avatars/avatar-sean-picott.jpg" class="rounded-circle me-2" width="32" />
+                                   Sean Picott
+                              </td>
+                              <td>1</td>
+                              <td>$32.25</td>
+                              <td><span class="badge bg-success">Yes</span></td>
+                              <td>3 days ago</td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <img src="/assets/avatars/avatar-bell-covely.jpg" class="rounded-circle me-2" width="32" />
+                                   Bell Covely
+                              </td>
+                              <td>0</td>
+                              <td>$0.00</td>
+                              <td><span class="badge bg-success">Yes</span></td>
+                              <td>5 days ago</td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <img src="/assets/avatars/avatar-giraud-lamlin.jpg" class="rounded-circle me-2" width="32" />
+                                   Giraud Lamlin
+                              </td>
+                              <td>1</td>
+                              <td>$125.70</td>
+                              <td><span class="badge bg-secondary">No</span></td>
+                              <td>7 days ago</td>
+                         </tr>
+                    </tbody>
+               </table>
+          </div>
+     </div>
+</div>

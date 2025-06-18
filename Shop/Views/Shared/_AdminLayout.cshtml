@@ -5,58 +5,104 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <title>@ViewBag.Title - My Admin Dashboard</title>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
      <link rel="stylesheet" href="~/Content/site.css" />
+
+     <style>
+          body {
+               overflow-x: hidden;
+          }
+
+          #sidebar-wrapper {
+               min-height: 100vh;
+               background-color: #343a40;
+          }
+
+          .sidebar-heading {
+               font-size: 1.5rem;
+               padding: 1rem;
+               background-color: #212529;
+               color: #f8f9fa;
+               text-align: center;
+          }
+
+          .list-group-item {
+               background-color: #343a40;
+               color: #adb5bd;
+               border: none;
+          }
+
+               .list-group-item:hover, .list-group-item.active {
+                    background-color: #495057;
+                    color: #ffffff;
+               }
+
+          #page-content-wrapper {
+               flex: 1;
+          }
+
+          .navbar-light .navbar-nav .nav-link {
+               color: #333;
+          }
+
+               .navbar-light .navbar-nav .nav-link:hover {
+                    color: #0d6efd;
+               }
+     </style>
 </head>
 <body>
      <div class="d-flex" id="wrapper">
           <!-- Sidebar -->
-          <div class="border-end bg-white" id="sidebar-wrapper">
-               <div class="sidebar-heading border-bottom bg-light">My Admin</div>
+          <nav class="border-end" id="sidebar-wrapper">
+               <div class="sidebar-heading">My Admin</div>
                <div class="list-group list-group-flush">
-                    <a href="@Url.Action("Index", "Admin")" class="list-group-item list-group-item-action list-group-item-light p-3">Dashboard</a>
-                    <a href="@Url.Action("Orders", "Admin")" class="list-group-item list-group-item-action list-group-item-light p-3">Orders</a>
-                    <a href="@Url.Action("Products", "Admin")" class="list-group-item list-group-item-action list-group-item-light p-3">Products</a>
-                    <a href="@Url.Action("Customers", "Admin")" class="list-group-item list-group-item-action list-group-item-light p-3">Customers</a>
-                    <!-- Add more links as needed -->
+                    <a href="@Url.Action("Index", "Admin")" class="list-group-item list-group-item-action"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
+                    <a href="@Url.Action("Orders", "Admin")" class="list-group-item list-group-item-action"><i class="bi bi-receipt-cutoff me-2"></i>Orders</a>
+                    <a href="@Url.Action("Products", "Admin")" class="list-group-item list-group-item-action"><i class="bi bi-box-seam me-2"></i>Products</a>
+                    <a href="@Url.Action("Customers", "Admin")" class="list-group-item list-group-item-action"><i class="bi bi-people me-2"></i>Customers</a>
+                    <a href="@Url.Action("Reviews", "Admin")" class="list-group-item list-group-item-action"><i class="bi bi-star me-2"></i>Reviews</a>
                </div>
-          </div>
+          </nav>
           <!-- /#sidebar-wrapper -->
           <!-- Page Content -->
           <div id="page-content-wrapper">
                <!-- Top Navbar -->
-               <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+               <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-3">
                     <div class="container-fluid">
-                         <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                         <button class="btn btn-outline-primary me-3" id="sidebarToggle"><i class="bi bi-list"></i></button>
+                         <a class="navbar-brand" href="#">Admin Panel</a>
                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                          </button>
-                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                              <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                   <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                                   <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
-                                   <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+
+                         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                              <ul class="navbar-nav">
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="@Url.Action("Index", "Home")"><i class="bi bi-house-door"></i> Home</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="@Url.Action("UserPage", "Auth")"><i class="bi bi-person-circle"></i> Profile</a>
+                                   </li>
                               </ul>
                          </div>
                     </div>
                </nav>
                <!-- /Top Navbar -->
 
-               <div class="container-fluid">
+               <main class="container-fluid py-4">
                     @RenderBody()
-               </div>
+               </main>
 
                @Html.Partial("_SimpleFooter")
-
           </div>
           <!-- /#page-content-wrapper -->
      </div>
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
      <script>
-          // Toggle the sidebar
           document.getElementById("sidebarToggle").addEventListener("click", function () {
-               document.getElementById("wrapper").classList.toggle("toggled");
+               document.getElementById("sidebar-wrapper").classList.toggle("d-none");
           });
      </script>
 </body>

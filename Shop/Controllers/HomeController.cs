@@ -91,7 +91,7 @@ namespace Shop.Controllers
           [HttpPost]
           public ActionResult Product(string btn)
           {
-               return RedirectToAction("Product", "Home", new { @p = btn });
+               return RedirectToAction("ProductPage", "Shop", new { ProductID = btn });
           }
           public ActionResult AboutUs()
           {

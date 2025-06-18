@@ -1,6 +1,52 @@
-﻿
-@{
-     Layout = "~/Views/Shared/_SimpleLayout.cshtml";
+﻿@{
+     Layout = "~/Views/Shared/_AdminLayout.cshtml";
      ViewBag.Title = "Products";
 }
+@model List<Shop.Models.Product>
 
+<h2>Manage Products</h2>
+
+<form method="get" class="row g-2 mb-3">
+     <div class="col-md-4">
+          <input type="text" name="searchTerm" value="@Request.QueryString["searchTerm"]" class="form-control" placeholder="Search by name..." />
+     </div>
+     <div class="col-md-3">
+          <input type="number" name="id" value="@Request.QueryString["id"]" class="form-control" placeholder="Search by ID..." />
+     </div>
+     <div class="col-md-3">
+          <button type="submit" class="btn btn-primary">Search</button>
+          <a href="@Url.Action("Products", "Admin")" class="btn btn-outline-secondary">Reset</a>
+     </div>
+</form>
+
+<a href="@Url.Action("AddProduct")" class="btn btn-success mb-3">Add New Product</a>
+
+<table class="table table-bordered table-hover">
+     <thead class="table-light">
+          <tr>
+               <th>ID</th>
+               <th>Name</th>
+               <th>Price ($)</th>
+               <th>Stock</th>
+               <th>Actions</th>
+          </tr>
+     </thead>
+     <tbody>
+          @foreach (var product in Model)
+          {
+               <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Price.ToString("N2")</td>
+                    <td>@product.Stock</td>
+                    <td>
+                         <a href="@Url.Action("EditProduct", "Admin", new { id = product.Id })" class="btn btn-warning btn-sm">Edit</a>
+                         @using (Html.BeginForm("DeleteProduct", "Admin", new { id = product.Id }, FormMethod.Post))
+                         {
+                              <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this product?');">Delete</button>
+                         }
+                    </td>
+               </tr>
+          }
+     </tbody>
+</table>

@@ -10,6 +10,8 @@ namespace Shop.BusinessLogic.Interface
      public interface IOrder
      {
           bool PlaceOrderAction(OrderDO order);
-          List<OrderDO> GetUserOrdersAction(string username);
+          List<OrderDO> GetUserOrderHistory(string username);
+          List<OrderDO> GetAllOrders();
+          bool DeleteOrder(int id);
      }
 }

@@ -13,6 +13,11 @@ namespace Shop.BusinessLogic.Interface
           List<ProductDO> GetAllProducts();
           ProductDO GetProductById(int id);
           bool UpdateProduct(ProductDO product);
-
+          bool DeleteProduct(int id);
+          bool AddReview(ReviewDO review);
+          List<ReviewDO> GetAllReviews(int product);
+          List<ReviewDO> GetAllReviews();
+          bool DeleteReview(int reviewId);
+          List<ProductDO> Search(string searchTerm, int? id);
      }
 }

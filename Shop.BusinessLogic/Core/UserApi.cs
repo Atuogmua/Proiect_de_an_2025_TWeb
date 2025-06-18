@@ -11,6 +11,7 @@ using System.Web;
 using AutoMapper;
 using Shop.Domain.Enums;
 using Shop.Domain.Model.Order;
+using System.Net;
 
 
 namespace Shop.BusinessLogic.Core
@@ -38,7 +39,6 @@ namespace Shop.BusinessLogic.Core
                {
                     return new ULoginResp { Status = false, StatusMsg = "Invalid login data." };
                }
-
                var isEmail = new EmailAddressAttribute().IsValid(data.Username);
                var hashedPassword = LoginHelper.HashGen(data.Password);
 
@@ -48,9 +48,9 @@ namespace Shop.BusinessLogic.Core
                         ? db.Users.FirstOrDefault(u => u.Email == data.Username && u.Password == hashedPassword)
                         : db.Users.FirstOrDefault(u => u.UserName == data.Username && u.Password == hashedPassword);
 
-                    if (user == null)
+                    if (user == null || user.IsBanned == true)
                     {
-                         return new ULoginResp { Status = false, StatusMsg = "The Username or Password is Incorrect" };
+                         return new ULoginResp { Status = false, StatusMsg = "The Username or Password is Incorrect or You have been Banned" };
                     }
 
                     user.IP = data.UserIP;
@@ -183,7 +183,7 @@ namespace Shop.BusinessLogic.Core
                     var currentUser = db.Users.FirstOrDefault(u =>
                          u.UserName == session.UserName || u.Email == session.UserName);
 
-                    if (currentUser == null) return null;
+                    if (currentUser == null || currentUser.IsBanned == true) return null;
 
                     return _mapper.Map<UMinimal>(currentUser);
                }
@@ -195,7 +195,7 @@ namespace Shop.BusinessLogic.Core
                using (var db = new UserContext())
                {
                     var user = db.Users.FirstOrDefault(u => u.UserName == username);
-                    if (user == null) return null;
+                    if (user == null || user.IsBanned == true) return null;
 
                     return new UserProfileDO
                     {
@@ -212,7 +212,7 @@ namespace Shop.BusinessLogic.Core
                using (var db = new UserContext())
                {
                     var user = db.Users.FirstOrDefault(u => u.UserName == profile.Username);
-                    if (user == null) return false;
+                    if (user == null || user.IsBanned == true) return false;
 
                     user.Email = profile.Email;
                     user.Phone = profile.PhoneNumber;
@@ -223,37 +223,70 @@ namespace Shop.BusinessLogic.Core
           }
 
 
-          public List<OrderHistoryDO> GetUserOrderHistoryAction(string username)
+          public string GetUsernameFromCookieAction(string cookieValue)
           {
-               using (var db = new OrderContext())
+               if (string.IsNullOrEmpty(cookieValue)) return null;
+
+               Session session;
+
+               using (var db = new SessionContext())
                {
-                    return db.Orders
-                        .Include(o => o.Items)
-                        .Where(o => o.Username == username)
-                        .Select(o => new OrderHistoryDO
-                        {
-                             OrderId = o.Id,
-                             OrderDate = o.OrderDate,
-                             Address = o.Address,
-                             TotalPrice = o.TotalPrice,
-                             Items = o.Items.Select(i => new OrderItemDO
-                             {
-                                  ProductId = i.ProductId,
-                                  ProductName = i.ProductName,
-                                  Quantity = i.Quantity,
-                                  UnitPrice = i.UnitPrice
-                             }).ToList()
-                        }).ToList();
+                    session = db.Sessions.FirstOrDefault(s => s.CookieString == cookieValue && s.ExpireTime > DateTime.Now);
+               }
+
+               if (session == null) return null;
+
+               using (var db = new UserContext())
+               {
+                    var currentUser = db.Users.FirstOrDefault(u =>
+                         u.UserName == session.UserName || u.Email == session.UserName);
+
+                    if (currentUser == null || currentUser.IsBanned == true) return null;
+
+                    return currentUser.UserName;
                }
           }
 
-
-          public string GetUsernameFromCookieAction(string cookieValue)
+          public bool ChangePasswordAction(string username, string oldPassword, string newPassword)
           {
-               using (var db = new SessionContext())
+               using (var _context = new UserContext())
                {
-                    var session = db.Sessions.FirstOrDefault(s => s.CookieString == cookieValue);
-                    return session?.UserName;
+                    var user = _context.Users.FirstOrDefault(u => u.UserName == username);
+
+                    if (user == null || user.IsBanned == true)
+                         return false;
+
+                    // Assuming passwords are stored hashed:
+                    string oldPasswordHash = LoginHelper.HashGen(oldPassword);
+                    if (user.Password != oldPasswordHash)
+                         return false;
+
+                    user.Password = LoginHelper.HashGen(newPassword);
+
+                    _context.SaveChanges();
+                    return true;
+               }
+          }
+
+          public List<UMinimal> GetAllUsersAction()
+          {
+               using (var _db = new UserContext())
+               {
+                    return _mapper.Map<List<UMinimal>>(_db.Users.ToList());
+               }
+          }
+
+          public bool ToggleBanUserAction(int userId)
+          {
+               using (var _db = new UserContext())
+               {
+                    var user = _db.Users.FirstOrDefault(u => u.Id == userId);
+                    if (user == null)
+                         return false;
+
+                    user.IsBanned = !user.IsBanned;
+                    _db.SaveChanges();
+                    return true;
                }
           }
 

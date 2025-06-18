@@ -11,10 +11,28 @@
                <div class="col-lg-5">
                     <div class="intro-excerpt">
                          <h1>Shop</h1>
+                         <p class="mb-4">Discover our amazing collection of products</p>
                     </div>
                </div>
                <div class="col-lg-7">
-                    <!-- Empty for design consistency -->
+                    <!-- Search Bar in Hero -->
+                    <div class="search-hero mt-4">
+                         @using (Html.BeginForm("Catalog", "Shop", FormMethod.Get, new { id = "searchForm" }))
+                         {
+                              <div class="input-group input-group-lg">
+                                   <input type="text"
+                                          name="search"
+                                          class="form-control"
+                                          placeholder="Search products..."
+                                          value="@Request.QueryString["search"]">
+                                   <div class="input-group-append">
+                                        <button class="btn btn-primary" type="submit">
+                                             <i class="fa fa-search"></i> Search
+                                        </button>
+                                   </div>
+                              </div>
+                         }
+                    </div>
                </div>
           </div>
      </div>
@@ -23,36 +41,155 @@
 
 <div class="untree_co-section product-section before-footer-section">
      <div class="container">
-          <div class="row">
+
+          <!-- Filter and Sort Controls -->
+          <div class="row mb-4">
+               <div class="col-12">
+                    <div class="filters-container bg-light p-3 rounded">
+                         @using (Html.BeginForm("Catalog", "Shop", FormMethod.Get, new { id = "filterForm" }))
+                         {
+                              <!-- Preserve search term -->
+                              <input type="hidden" name="search" value="@Request.QueryString["search"]" />
+
+                              <div class="row align-items-end">
+                                   <!-- Category Filter -->
+                                   <div class="col-md-3 mb-2">
+                                        <label class="form-label">Category</label>
+                                        @Html.DropDownList("category",
+                                             (IEnumerable<SelectListItem>)ViewBag.Categories,
+                                             "All Categories",
+                                             new { @class = "form-control", onchange = "document.getElementById('filterForm').submit();" })
+                                   </div>
+
+                                   <!-- Company Filter -->
+                                   <div class="col-md-3 mb-2">
+                                        <label class="form-label">Company</label>
+                                        @Html.DropDownList("company",
+                                             (IEnumerable<SelectListItem>)ViewBag.Companies,
+                                             "All Companies",
+                                             new { @class = "form-control", onchange = "document.getElementById('filterForm').submit();" })
+                                   </div>
+
+                                   <!-- Price Range -->
+                                   <div class="col-md-2 mb-2">
+                                        <label class="form-label">Min Price</label>
+                                        <input type="number" name="minPrice" class="form-control"
+                                               placeholder="0" step="0.01" min="0"
+                                               value="@Request.QueryString["minPrice"]"
+                                               onchange="document.getElementById('filterForm').submit();">
+                                   </div>
+
+                                   <div class="col-md-2 mb-2">
+                                        <label class="form-label">Max Price</label>
+                                        <input type="number" name="maxPrice" class="form-control"
+                                               placeholder="∞" step="0.01" min="0"
+                                               value="@Request.QueryString["maxPrice"]"
+                                               onchange="document.getElementById('filterForm').submit();">
+                                   </div>
+
+                                   <!-- Sort Options -->
+                                   <div class="col-md-2 mb-2">
+                                        <label class="form-label">Sort By</label>
+                                        @Html.DropDownList("sortBy",
+                                             new List<SelectListItem>
+                                             {
+                                                  new SelectListItem { Text = "Name A-Z", Value = "name_asc", Selected = Request.QueryString["sortBy"] == "name_asc" },
+                                                  new SelectListItem { Text = "Name Z-A", Value = "name_desc", Selected = Request.QueryString["sortBy"] == "name_desc" },
+                                                  new SelectListItem { Text = "Price: Low to High", Value = "price_asc", Selected = Request.QueryString["sortBy"] == "price_asc" },
+                                                  new SelectListItem { Text = "Price: High to Low", Value = "price_desc", Selected = Request.QueryString["sortBy"] == "price_desc" },
+                                                  new SelectListItem { Text = "Company", Value = "company", Selected = Request.QueryString["sortBy"] == "company" }
+                                             },
+                                             "Default",
+                                             new { @class = "form-control", onchange = "document.getElementById('filterForm').submit();" })
+                                   </div>
+                              </div>
+
+                              <!-- Clear Filters Button -->
+                              <div class="row mt-2">
+                                   <div class="col-12">
+                                        <a href="@Url.Action("Catalog", "Shop")" class="btn btn-outline-secondary btn-sm">
+                                             <i class="fa fa-times"></i> Clear All Filters
+                                        </a>
+
+                                        <!-- Results Count -->
+                                        <span class="ml-3 text-muted">
+                                             @if (Model != null && Model.Any())
+                                             {
+                                                  <text>Showing @Model.Count products</text>
+                                             }
+                                             else
+                                             {
+                                                  <text>No products found</text>
+                                             }
+                                        </span>
+                                   </div>
+                              </div>
+                         }
+                    </div>
+               </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="row" id="products-container">
 
                @if (Model != null && Model.Any())
                {
                     foreach (var product in Model)
                     {
                          <!-- Start Product Column -->
-                         <div class="col-12 col-md-4 col-lg-3 mb-5">
-                              <a class="product-item" href="@Url.Action("ProductPage", "Shop", new { ProductID = product.Id })">
-                                   <td class="product-thumbnail">
-                                        @if (!string.IsNullOrEmpty(product.ProductImagePath))
-                                        {
-                                             <img src="@Url.Content("/Content/images/" + product.ProductImagePath)"
-                                                  alt="@product.Name"
-                                                  class="img-fluid cart-product-image"
-                                                  style="max-width: 200px; max-height: 200px; object-fit: cover;"
-                                                  onerror="this.src='@Url.Content("/Content/images/default-image.png")'; this.onerror=null;">
-                                        }
-                                        else
-                                        {
-                                             <img src="@Url.Content("/Content/images/default-image.png")"
-                                                  alt="Default Product Image"
-                                                  class="img-fluid cart-product-image"
-                                                  style="max-width: 80px; max-height: 80px; object-fit: cover;">
-                                        }
-                                   </td>
-                                   <h3 class="product-title">@product.Name</h3>
-                                   <strong class="product-price">@product.Price.ToString("C")</strong>
+                         <div class="col-12 col-md-4 col-lg-3 mb-5 product-card"
+                              data-category="@product.Category"
+                              data-company="@product.CompanyName"
+                              data-price="@product.Price">
+                              <div class="product-item-wrapper">
+                                   <a class="product-item" href="@Url.Action("ProductPage", "Shop", new { ProductID = product.Id })">
+                                        <div class="product-thumbnail">
+                                             @if (!string.IsNullOrEmpty(product.ProductImagePath))
+                                             {
+                                                  <img src="@Url.Content("/Content/images/" + product.ProductImagePath)"
+                                                       alt="@product.Name"
+                                                       class="img-fluid product-image"
+                                                       style="width: 100%; height: 200px; object-fit: cover;"
+                                                       onerror="this.src='@Url.Content("/Content/images/default-image.png")'; this.onerror=null;">
+                                             }
+                                             else
+                                             {
+                                                  <img src="@Url.Content("/Content/images/default-image.png")"
+                                                       alt="Default Product Image"
+                                                       class="img-fluid product-image"
+                                                       style="width: 100%; height: 200px; object-fit: cover;">
+                                             }
 
-                              </a>
+                                             <!-- Stock Badge -->
+                                             @if (product.Stock <= 5 && product.Stock > 0)
+                                             {
+                                                  <span class="badge badge-warning stock-badge">Low Stock</span>
+                                             }
+                                             else if (product.Stock == 0)
+                                             {
+                                                  <span class="badge badge-danger stock-badge">Out of Stock</span>
+                                             }
+                                        </div>
+
+                                        <div class="product-info p-3">
+                                             <h3 class="product-title">@product.Name</h3>
+                                             <p class="product-company text-muted">@product.CompanyName</p>
+                                             <p class="small">@product.Category</p>
+                                             <strong class="product-price">@product.Price.ToString("C")</strong>
+
+                                             @if (!string.IsNullOrEmpty(product.Description) && product.Description.Length > 80)
+                                             {
+                                                  <p class="product-description text-muted mt-2">
+                                                       @(product.Description.Substring(0, 80))...
+                                                  </p>
+                                             }
+                                             else if (!string.IsNullOrEmpty(product.Description))
+                                             {
+                                                  <p class="product-description text-muted mt-2">@product.Description</p>
+                                             }
+                                        </div>
+                                   </a>
+                              </div>
                          </div>
                          <!-- End Product Column -->
                     }
@@ -62,37 +199,166 @@
                     <!-- No Products Available -->
                     <div class="col-12">
                          <div class="text-center py-5">
-                              <h3 class="mb-3">No Products Available</h3>
-                              <p class="text-muted">Sorry, there are currently no products in our catalog. Please check back later!</p>
-                              <a href="@Url.Action("Index", "Home")" class="btn btn-primary">
-                                   <span class="fa fa-home me-2"></span>Back to Home
-                              </a>
+                              <i class="fa fa-search fa-3x text-muted mb-3"></i>
+                              <h3 class="mb-3">No Products Found</h3>
+                              @if (!string.IsNullOrEmpty(Request.QueryString["search"]) ||
+                                   !string.IsNullOrEmpty(Request.QueryString["category"]) ||
+                                   !string.IsNullOrEmpty(Request.QueryString["company"]))
+                              {
+                                   <p class="text-muted">Try adjusting your search or filter criteria.</p>
+                                   <a href="@Url.Action("Catalog", "Shop")" class="btn btn-primary">
+                                        <i class="fa fa-times me-2"></i>Clear All Filters
+                                   </a>
+                              }
+                              else
+                              {
+                                   <p class="text-muted">Sorry, there are currently no products in our catalog. Please check back later!</p>
+                                   <a href="@Url.Action("Index", "Home")" class="btn btn-primary">
+                                        <i class="fa fa-home me-2"></i>Back to Home
+                                   </a>
+                              }
                          </div>
                     </div>
                }
 
           </div>
+
+          <!-- Load More Button (if implementing pagination) -->
+          @if (ViewBag.HasMoreProducts == true)
+          {
+               <div class="row">
+                    <div class="col-12 text-center mt-4">
+                         <button class="btn btn-outline-primary btn-lg" id="loadMoreBtn">
+                              Load More Products
+                         </button>
+                    </div>
+               </div>
+          }
      </div>
 </div>
+
+<style>
+.filters-container {
+     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-item-wrapper {
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     border-radius: 8px;
+     overflow: hidden;
+     height: 100%;
+}
+
+.product-item-wrapper:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product-item {
+     text-decoration: none;
+     color: inherit;
+     display: block;
+     height: 100%;
+}
+
+.product-item:hover {
+     text-decoration: none;
+     color: inherit;
+}
+
+.product-thumbnail {
+     position: relative;
+     overflow: hidden;
+}
+
+.stock-badge {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     font-size: 0.75rem;
+}
+
+.product-info {
+     background: white;
+     border: 1px solid #eee;
+     border-top: none;
+}
+
+.product-title {
+     font-size: 1.1rem;
+     margin-bottom: 0.5rem;
+     font-weight: 600;
+}
+
+.product-company {
+     font-size: 0.9rem;
+     margin-bottom: 0.5rem;
+}
+
+.product-price {
+     color: #2f5233;
+     font-size: 1.2rem;
+}
+
+.product-description {
+     font-size: 0.85rem;
+     line-height: 1.4;
+}
+
+.search-hero .input-group-lg .form-control {
+     border-radius: 25px 0 0 25px;
+     border: 2px solid #2f5233;
+}
+
+.search-hero .btn-primary {
+     border-radius: 0 25px 25px 0;
+     border: 2px solid #2f5233;
+     background: #2f5233;
+}
+
+     @@media (max-width: 768px) {
+          .filters-container .row > div {
+               margin-bottom: 1rem;
+          }
+
+          .search-hero {
+               margin-top: 2rem;
+          }
+     }
+</style>
 
 @section Scripts {
      <script>
           $(document).ready(function () {
                // Add hover effects for product items
-               $('.product-item').hover(
+               $('.product-item-wrapper').hover(
                     function () {
-                         $(this).find('.icon-cross').addClass('animate__animated animate__rotateIn');
+                         $(this).addClass('shadow-lg');
                     },
                     function () {
-                         $(this).find('.icon-cross').removeClass('animate__animated animate__rotateIn');
+                         $(this).removeClass('shadow-lg');
                     }
                );
 
-               // Add click tracking for analytics (optional)
+               // Add click tracking for analytics
                $('.product-item').click(function () {
                     var productName = $(this).find('.product-title').text();
                     console.log('Product clicked: ' + productName);
                });
+
+               // Auto-submit search form on Enter
+               $('input[name="search"]').keypress(function (e) {
+                    if (e.which == 13) {
+                         $('#searchForm').submit();
+                    }
+               });
+
+               // Smooth scroll to products after filter
+               if (window.location.search) {
+                    $('html, body').animate({
+                         scrollTop: $('#products-container').offset().top - 100
+                    }, 500);
+               }
           });
      </script>
 }

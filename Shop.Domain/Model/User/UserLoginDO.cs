@@ -12,6 +12,7 @@ namespace Shop.Domain.Model.User
           public string Username { get;  set; }
           public string Password { get; set; }
           public string UserIP { get; set; }
+          public bool IsBanned { get; set; }
           public DateTime LoginDateTime { get; set; }
      }
 }

@@ -21,7 +21,7 @@
                     <a class="nav-link" href="@Url.Action("ContactUs","Home")">Contact us</a>
                </li>
                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("UserPage","Auth")">Your Profile</a>
+                    <a class="nav-link" href="@Url.Action("Logout","Auth")">Log Out</a>
                </li>
                <li class="nav-item">
                     <a class="nav-link" href="@Url.Action("Index","Admin")">Admin</a>
@@ -46,8 +46,8 @@
                     }
                     else
                     {
-                         <a class="nav-link d-flex align-items-center" href="@Url.Action("Login","Auth")">
-                              <span class="profile-address me-2">Login</span>
+                         <a class="nav-link d-flex align-items-center" href="@Url.Action("UserPage","Auth")">
+                              <span class="profile-address me-2">Your Profile</span>
                               <img src="/Content/images/user.svg" alt="User" style="width: 24px; height: 24px;">
                          </a>
                     }

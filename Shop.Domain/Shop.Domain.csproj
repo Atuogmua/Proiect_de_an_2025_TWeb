@@ -42,16 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\PaymentMethod.cs" />
     <Compile Include="Enums\PCategories.cs" />
     <Compile Include="Enums\URole.cs" />
     <Compile Include="Model\Order\ODbTable.cs" />
     <Compile Include="Model\Order\OrderDO.cs" />
-    <Compile Include="Model\Order\OrderHistoryDO.cs" />
-    <Compile Include="Model\Order\OrderItemDb.cs" />
     <Compile Include="Model\Order\OrderItemDO.cs" />
     <Compile Include="Model\Product\CartItemDO.cs" />
     <Compile Include="Model\Product\PDBTable.cs" />
     <Compile Include="Model\Product\ProductDO.cs" />
+    <Compile Include="Model\Product\ReviewDO.cs" />
     <Compile Include="Model\User\Session.cs" />
     <Compile Include="Model\User\UDBTable.cs" />
     <Compile Include="Model\User\ULoginResp.cs" />

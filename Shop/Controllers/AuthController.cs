@@ -16,12 +16,14 @@ namespace Shop.Controllers
      public class AuthController : Controller
      {
           private readonly ISession _session;
+          private readonly IOrder _order;
           private readonly IMapper _mapper;
 
           public AuthController()
           {
                var bl = new BusinessLogic.BusinessLogic();
                _session = bl.GetSessionBL();
+               _order = bl.GetOrderBL();
 
                var config = new MapperConfiguration(cfg =>
                {
@@ -29,7 +31,18 @@ namespace Shop.Controllers
                     cfg.CreateMap<UserRegister, URegisterDO>();
                     cfg.CreateMap<UserProfile, UserProfileDO>();
                     cfg.CreateMap<UserProfileDO, UserProfile>();
+                    cfg.CreateMap<OrderDO, Order>()
+                        .ForMember(dest => dest.CartItems, opt => opt.MapFrom(src => src.Items));
+
+                    cfg.CreateMap<OrderItemDO, CartItem>()
+                        .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.ProductName))
+                        .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.UnitPrice))
+                        .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity));
+
+                    cfg.CreateMap<CartItem, OrderItemDO>();
+                    cfg.CreateMap<Order, OrderDO>();
                });
+
 
                _mapper = config.CreateMapper();
           }
@@ -110,6 +123,7 @@ namespace Shop.Controllers
 
                          var loginResult = _session.UserLogin(data);
 
+
                          if (loginResult.Status)
                          {
                               HttpCookie cookie = _session.GenCookie(model.Username);
@@ -137,72 +151,88 @@ namespace Shop.Controllers
           public ActionResult UserPage()
           {
                if (Session["LoginStatus"] != "login")
-               {
                     return RedirectToAction("Login");
-               }
 
                try
                {
-                    // Get current user information
-                    string username = GetCurrentUsername();
-                    if (string.IsNullOrEmpty(username))
+                    string username = null;
+
+                    if (Request.Cookies["X-KEY"]?.Value is string cookieValue && !string.IsNullOrWhiteSpace(cookieValue))
                     {
-                         return RedirectToAction("Login");
+                         try
+                         {
+                              username = _session.GetUsernameFromCookie(cookieValue);
+                         }
+                         catch (Exception ex)
+                         {
+                              System.Diagnostics.Debug.WriteLine($"[OrderHistory] Cookie parsing failed: {ex.Message}");
+                         }
                     }
 
-                    var userProfile = _session.GetUserProfile(username);
-                    if (userProfile != null)
+
+                    if (string.IsNullOrEmpty(username))
+                         return RedirectToAction("Login");
+
+                    var profileDO = _session.GetUserProfile(username);
+                    var ordersDO = _order.GetUserOrderHistory(username);
+
+                    var model = new UserProfileViewModel
                     {
-                         var profileModel = _mapper.Map<UserProfile>(userProfile);
-                         return View(profileModel);
-                    }
-                    else
-                    {
-                         // Create empty profile for new users
-                         var emptyProfile = new UserProfile { Username = username };
-                         return View(emptyProfile);
-                    }
+                         Profile = _mapper.Map<UserProfile>(profileDO),
+                         Orders = _mapper.Map<List<Order>>(ordersDO)
+                    };
+
+                    return View(model);
                }
                catch (Exception ex)
                {
                     System.Diagnostics.Debug.WriteLine($"UserPage error: {ex.Message}");
-                    TempData["ErrorMessage"] = "Unable to load profile. Please try again.";
-                    return View(new UserProfile());
+                    TempData["ErrorMessage"] = "Unable to load profile.";
+                    return View(new UserProfileViewModel
+                    {
+                         Profile = new UserProfile(),
+                         Orders = new List<Order>()
+                    });
                }
           }
 
+
           [HttpPost]
           [ValidateAntiForgeryToken]
-          public ActionResult UserPage(UserProfile model)
+          public ActionResult UserPage(UserProfileViewModel model)
           {
                if (Session["LoginStatus"] != "login")
-               {
                     return RedirectToAction("Login");
-               }
 
                try
                {
                     if (ModelState.IsValid)
                     {
-                         string username = GetCurrentUsername();
-                         if (string.IsNullOrEmpty(username))
-                         {
-                              return RedirectToAction("Login");
-                         }
+                         string username = null;
 
-                         var profileData = _mapper.Map<UserProfileDO>(model);
+                         if (Request.Cookies["X-KEY"]?.Value is string cookieValue && !string.IsNullOrWhiteSpace(cookieValue))
+                         {
+                              try
+                              {
+                                   username = _session.GetUsernameFromCookie(cookieValue);
+                              }
+                              catch (Exception ex)
+                              {
+                                   System.Diagnostics.Debug.WriteLine($"[OrderHistory] Cookie parsing failed: {ex.Message}");
+                              }
+                         }
+                         if (string.IsNullOrEmpty(username))
+                              return RedirectToAction("Login");
+
+                         var profileData = _mapper.Map<UserProfileDO>(model.Profile);
                          profileData.Username = username;
                          profileData.UpdateDateTime = DateTime.Now;
 
-                         var updateResult = _session.UpdateUserProfile(profileData);
-                         if (updateResult)
+                         var result = _session.UpdateUserProfile(profileData);
+                         if (result)
                          {
                               TempData["SuccessMessage"] = "Profile updated successfully!";
                               return RedirectToAction("UserPage");
-                         }
-                         else
-                         {
-                              return View(model);
                          }
                     }
 
@@ -211,39 +241,45 @@ namespace Shop.Controllers
                catch (Exception ex)
                {
                     System.Diagnostics.Debug.WriteLine($"Profile update error: {ex.Message}");
-                    ModelState.AddModelError("", "An unexpected error occurred. Please try again.");
+                    ModelState.AddModelError("", "Unexpected error updating profile.");
                     return View(model);
                }
           }
+
 
           [HttpGet]
           public ActionResult OrderHistory()
           {
                if (Session["LoginStatus"] != "login")
+                    return RedirectToAction("Login");
+               UMinimal user = null;
+
+               if (Request.Cookies["X-KEY"]?.Value is string cookieValue && !string.IsNullOrWhiteSpace(cookieValue))
                {
+                    try
+                    {
+                         user = _session.GetUserByCookie(cookieValue);
+                    }
+                    catch (Exception ex)
+                    {
+                         System.Diagnostics.Debug.WriteLine($"[OrderHistory] Cookie parsing failed: {ex.Message}");
+                    }
+               }
+
+               if (string.IsNullOrWhiteSpace(user.Username))
+               {
+                    System.Diagnostics.Debug.WriteLine("[OrderHistory] Username is null or empty.");
                     return RedirectToAction("Login");
                }
 
-               try
-               {
-                    string username = GetCurrentUsername();
-                    if (string.IsNullOrEmpty(username))
-                    {
-                         return RedirectToAction("Login");
-                    }
+               var ordersDO = _order.GetUserOrderHistory(user.Username);
+               var orders = _mapper.Map<List<Order>>(ordersDO);
 
-                    var orders = _session.GetUserOrderHistory(username);
-                    return View(orders);
-               }
-               catch (Exception ex)
-               {
-                    System.Diagnostics.Debug.WriteLine($"Order history error: {ex.Message}");
-                    TempData["ErrorMessage"] = "Unable to load order history. Please try again.";
-                    return View(new List<OrderHistoryDO>());
-               }
+               return View(orders);
+               
           }
 
-          [HttpPost]
+          [HttpGet]
           public ActionResult Logout()
           {
                try
@@ -251,13 +287,13 @@ namespace Shop.Controllers
                     Session.Clear();
                     Session.Abandon();
 
-                    if (Request.Cookies["ShopAuth"] != null)
+                    if (Request.Cookies["X-KEY"] != null)
                     {
-                         var cookie = new HttpCookie("ShopAuth")
+                         var expiredCookie = new HttpCookie("X-KEY")
                          {
                               Expires = DateTime.Now.AddDays(-1)
                          };
-                         Response.Cookies.Add(cookie);
+                         Response.Cookies.Add(expiredCookie);
                     }
 
                     return RedirectToAction("Index", "Home");
@@ -269,27 +305,106 @@ namespace Shop.Controllers
                }
           }
 
-          private string GetCurrentUsername()
-          {
-               if (Session["Username"] != null)
-               {
-                    return Session["Username"].ToString();
-               }
 
-               if (Request.Cookies["ShopAuth"] != null)
+          [HttpPost]
+          [ValidateAntiForgeryToken]
+          [ActionName("Logout")]
+          public ActionResult LogoutPost()
+          {
+               try
+               {
+                    Session.Clear();
+                    Session.Abandon();
+
+                    if (Request.Cookies["X-KEY"] != null)
+                    {
+                         var expiredCookie = new HttpCookie("X-KEY")
+                         {
+                              Expires = DateTime.Now.AddDays(-1)
+                         };
+                         Response.Cookies.Add(expiredCookie);
+                    }
+
+                    return RedirectToAction("Index", "Home");
+               }
+               catch (Exception ex)
+               {
+                    System.Diagnostics.Debug.WriteLine($"Logout error: {ex.Message}");
+                    return RedirectToAction("Index", "Home");
+               }
+          }
+
+
+          [HttpGet]
+          public ActionResult ResetPassword()
+          {
+               if (Session["LoginStatus"] != "login")
+                    return RedirectToAction("Login");
+
+               string username = null;
+
+               if (Request.Cookies["X-KEY"]?.Value is string cookieValue && !string.IsNullOrWhiteSpace(cookieValue))
                {
                     try
                     {
-                         var cookieValue = Request.Cookies["ShopAuth"].Value;
-                         return _session.GetUsernameFromCookie(cookieValue);
+                         username = _session.GetUsernameFromCookie(cookieValue);
                     }
                     catch (Exception ex)
                     {
-                         System.Diagnostics.Debug.WriteLine($"Cookie parsing error: {ex.Message}");
+                         System.Diagnostics.Debug.WriteLine($"[OrderHistory] Cookie parsing failed: {ex.Message}");
                     }
                }
+               if (string.IsNullOrEmpty(username))
+                    return RedirectToAction("Login");
 
-               return null;
+               var model = new ResetPasswordViewModel
+               {
+                    Username = username
+               };
+
+               return View(model);
           }
+
+          [HttpPost]
+          [ValidateAntiForgeryToken]
+          public ActionResult ResetPassword(ResetPasswordViewModel model)
+          {
+               if (Session["LoginStatus"] != "login")
+                    return RedirectToAction("Login");
+
+               if (!ModelState.IsValid)
+                    return View(model);
+
+               try
+               {
+                    var changeResult = _session.ChangePassword(model.Username, model.CurrentPassword, model.NewPassword);
+                    if (changeResult)
+                    {
+                         TempData["SuccessMessage"] = "Password changed successfully!";
+                         return RedirectToAction("UserPage");
+                    }
+                    else
+                    {
+                         TempData["ErrorMessage"] = "Current password is incorrect.";
+                         return View(model);
+                    }
+               }
+               catch (Exception ex)
+               {
+                    System.Diagnostics.Debug.WriteLine($"ResetPassword error: {ex.Message}");
+                    TempData["ErrorMessage"] = "Something went wrong. Please try again.";
+                    return View(model);
+               }
+          }
+
+
+
+          [HttpGet]
+          public ActionResult UpdateProfile() => RedirectToAction("UserPage");
+
+          [HttpPost]
+          public ActionResult UpdateProfile(UserProfileViewModel model) => UserPage(model);
+
+
      }
 }

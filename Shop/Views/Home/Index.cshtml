@@ -14,7 +14,7 @@
                {
                     <div class="col">
                          <div class="card h-100 shadow-sm">
-                              <div class="card-body">
+                              <div class="card-body text-center">
                                    <h5 class="card-title">@prod.Name</h5>
                                    <td class="product-thumbnail">
                                         @if (!string.IsNullOrEmpty(prod.ProductImagePath))
@@ -33,13 +33,15 @@
                                                   style="max-width: 80px; max-height: 80px; object-fit: cover;">
                                         }
                                    </td>
+                                   <p class="small"><b>@prod.Category</b></p>
                                    <p class="card-text">Explore more about this product.</p>
                               </div>
                               <div class="card-footer bg-white border-0">
-                                   @using (Html.BeginForm("Product", "Home", FormMethod.Post, new { autocomplete = "off" }))
+                                   @using (Html.BeginForm("Product", "Home", FormMethod.Post))
                                    {
-                                        <button class="btn btn-primary w-100" type="submit" name="btn" value="@prod">View Product</button>
+                                        <button class="btn btn-primary w-100" type="submit" name="btn" value="@prod.Id" class="btn btn-info">View Product</button>
                                    }
+
                               </div>
                          </div>
                     </div>

@@ -13,6 +13,7 @@ namespace Shop.BusinessLogic.DBDataContext
      {
           public ShopContext() : base("name=Shop") { }
           public DbSet<PDBTable> Products { get; set; }
-          
+          public DbSet<ReviewDO> Reviews { get; set; }
+
      }
 }

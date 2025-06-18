@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -99,6 +100,90 @@ namespace Shop.BusinessLogic.Core
                     CompanyName = product.CompanyName
                };
 
+          }
+
+          public bool DeleteProductAction(int id)
+          {
+               var product = _db.Products.FirstOrDefault(p => p.Id == id);
+               if (product != null)
+               {
+                    _db.Products.Remove(product);
+                    _db.SaveChanges();
+                    return true;
+               }
+               return false;
+          }
+
+          public bool AddReviewAction(ReviewDO review)
+          {
+               using (var context = new ShopContext())
+               {
+                    var newReview = new ReviewDO
+                    {
+                         ProductId = review.ProductId,
+                         Username = review.Username,
+                         Content = review.Content,
+                         Rating = review.Rating,
+                         CreatedAt = DateTime.Now
+                    };
+
+                    context.Reviews.Add(newReview);
+                    context.SaveChanges();
+                    return true;
+               }
+               return false;
+          }
+
+          public List<ReviewDO> GetAllReviewsAction(int product)
+          {
+               using (var _db = new ShopContext())
+               {
+                    return _db.Reviews
+                      .Where(r => r.ProductId == product)
+                      .OrderByDescending(r => r.CreatedAt)
+                      .ToList();
+               }
+
+          }
+          public List<ReviewDO> GetAllReviewsAction()
+          {
+               using (var _db = new ShopContext())
+               {
+                    return _db.Reviews.OrderByDescending(r => r.CreatedAt).ToList();
+               }
+          }
+          public bool DeleteReviewAction(int reviewId)
+          {
+               using (var db = new ShopContext())
+               {
+                    var review = db.Reviews.FirstOrDefault(r => r.Id == reviewId);
+                    if (review == null)
+                         return false;
+
+                    db.Reviews.Remove(review);
+                    db.SaveChanges();
+                    return true;
+               }
+          }
+
+          public List<ProductDO> SearchAction(string searchTerm, int? id)
+          {
+               using (var context = new ShopContext())
+               {
+                    var query = context.Products.AsQueryable();
+
+                    if (!string.IsNullOrWhiteSpace(searchTerm))
+                    {
+                         query = query.Where(p => p.Name.Contains(searchTerm));
+                    }
+
+                    if (id.HasValue)
+                    {
+                         query = query.Where(p => p.Id == id.Value);
+                    }
+
+                    return _mapper.Map<List<ProductDO>>(query.ToList());
+               }
           }
 
      }

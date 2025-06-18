@@ -20,5 +20,6 @@ namespace Shop.Domain.Model.Product
           public string CompanyName { get; set; }
 
           public string ProductImagePath { get; set; }
+          public List<ReviewDO> Reviews { get; set; }
      }
 }

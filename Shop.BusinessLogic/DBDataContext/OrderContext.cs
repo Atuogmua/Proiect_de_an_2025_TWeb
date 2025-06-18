@@ -13,6 +13,5 @@ namespace Shop.BusinessLogic.DBDataContext
           public OrderContext() : base("name=Shop") { }
 
           public virtual DbSet<ODbTable> Orders { get; set; }
-          public virtual DbSet<OrderItemDb> OrderItems { get; set; }
      }
 }

@@ -15,11 +15,13 @@ namespace Shop.BusinessLogic.Interface
           HttpCookie GenCookie(string loginUsername);
           UMinimal GetUserByCookie(string cookieValue);
           ULoginResp RegisterUser(URegisterDO data);
-
+          List<UMinimal> GetAllUsers();
           UserProfileDO GetUserProfile(string username);
           bool UpdateUserProfile(UserProfileDO profile);
-          List<OrderHistoryDO> GetUserOrderHistory(string username);
           string GetUsernameFromCookie(string cookieValue);
+          bool ChangePassword(string username, string oldPassword, string newPassword);
+          bool ToggleBanUser(int userId);
+
 
      }
 }

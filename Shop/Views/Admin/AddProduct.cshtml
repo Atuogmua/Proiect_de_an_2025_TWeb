@@ -1,54 +1,66 @@
 ﻿@{
-     Layout = "~/Views/Shared/_SimpleLayout.cshtml";
-     ViewBag.Title = "Add Product";
+     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+     ViewBag.Title = Model?.ID > 0 ? "Edit Product" : "Add Product";
 }
-
 @model Shop.Domain.Model.Product.ProductDO
 
+<h2>@ViewBag.Title</h2>
 
-<h2>Add Product</h2>
+@if (TempData["SuccessMessage"] != null)
+{
+     <div class="alert alert-success alert-dismissible">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          @TempData["SuccessMessage"]
+     </div>
+}
 
-@using (Html.BeginForm("AddProduct", "Admin", FormMethod.Post))
+@using (Html.BeginForm(Model?.ID > 0 ? "EditProduct" : "AddProduct", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
      @Html.AntiForgeryToken()
+     @Html.HiddenFor(m => m.ID)
      @Html.HiddenFor(m => m.ProductImagePath)
 
      <div class="form-group">
-          @Html.LabelFor(m => m.Name)
+          @Html.LabelFor(m => m.Name, new { @class = "control-label" })
           @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
-          @Html.ValidationMessageFor(m => m.Name)
+          @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
      </div>
 
      <div class="form-group">
-          @Html.LabelFor(m => m.Description)
-          @Html.TextAreaFor(m => m.Description, new { @class = "form-control" })
+          @Html.LabelFor(m => m.Description, new { @class = "control-label" })
+          @Html.TextAreaFor(m => m.Description, new { @class = "form-control", rows = 4 })
+          @Html.ValidationMessageFor(m => m.Description, "", new { @class = "text-danger" })
      </div>
 
      <div class="form-group">
-          @Html.LabelFor(m => m.Price)
-          @Html.TextBoxFor(m => m.Price, new { @class = "form-control" })
-          @Html.ValidationMessageFor(m => m.Price)
+          @Html.LabelFor(m => m.Price, new { @class = "control-label" })
+          @Html.TextBoxFor(m => m.Price, new { @class = "form-control", type = "number", step = "0.01", min = "0" })
+          @Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })
      </div>
 
      <div class="form-group">
-          @Html.LabelFor(m => m.Stock)
-          @Html.TextBoxFor(m => m.Stock, new { @class = "form-control" })
-          @Html.ValidationMessageFor(m => m.Stock)
+          @Html.LabelFor(m => m.Stock, new { @class = "control-label" })
+          @Html.TextBoxFor(m => m.Stock, new { @class = "form-control", type = "number", min = "0" })
+          @Html.ValidationMessageFor(m => m.Stock, "", new { @class = "text-danger" })
      </div>
 
      <div class="form-group">
-          @Html.LabelFor(m => m.CompanyName)
+          @Html.LabelFor(m => m.CompanyName, new { @class = "control-label" })
           @Html.TextBoxFor(m => m.CompanyName, new { @class = "form-control" })
-          @Html.ValidationMessageFor(m => m.CompanyName)
-     </div>
-
-     <div>
-          @Html.LabelFor(m => m.Category)
-          @Html.DropDownListFor(m => m.Category, Model.Category, "Select a Category")
+          @Html.ValidationMessageFor(m => m.CompanyName, "", new { @class = "text-danger" })
      </div>
 
      <div class="form-group">
-          <label for="ProductImage">Product Image</label>
+          @Html.LabelFor(m => m.Category, new { @class = "control-label" })
+          @Html.DropDownListFor(m => m.Category,
+               (IEnumerable<SelectListItem>)ViewBag.Categories,
+               "Select a Category",
+               new { @class = "form-control" })
+          @Html.ValidationMessageFor(m => m.Category, "", new { @class = "text-danger" })
+     </div>
+
+     <div class="form-group">
+          <label for="ProductImage" class="control-label">Product Image</label>
 
           <!-- Display current image if exists -->
           @if (!string.IsNullOrEmpty(Model?.ProductImagePath))
@@ -74,17 +86,26 @@
                }
                else
                {
-                    <text>Select an image file for this product.</text>
+                    <text>Select an image file for this product (jpg, jpeg, png, gif, bmp).</text>
                }
           </small>
      </div>
 
-     <button type="submit" class="btn btn-primary">
-          @(Model?.ID > 0 ? "Update Product" : "Add Product")
-     </button>
+     <div class="form-group">
+          <button type="submit" class="btn btn-primary">
+               @(Model?.ID > 0 ? "Update Product" : "Add Product")
+          </button>
 
-     if (Model?.ID > 0)
+          <a href="@Url.Action("Index", "Admin")" class="btn btn-secondary">
+               @(Model?.ID > 0 ? "Cancel" : "Back to Products")
+          </a>
+     </div>
+
+     if (!ViewData.ModelState.IsValid)
      {
-          <a href="@Url.Action("Index", "Admin")" class="btn btn-secondary">Cancel</a>
+          <div class="alert alert-danger">
+               <strong>Please correct the following errors:</strong>
+               @Html.ValidationSummary(false, "", new { @class = "list-unstyled mb-0" })
+          </div>
      }
 }

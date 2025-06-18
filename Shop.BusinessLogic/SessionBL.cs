@@ -1,7 +1,9 @@
 ﻿using Shop.BusinessLogic.Core;
+using Shop.BusinessLogic.DBDataContext;
 using Shop.BusinessLogic.Interface;
 using Shop.Domain.Model.Order;
 using Shop.Domain.Model.User;
+using System;
 using System.Collections.Generic;
 using System.Web;
 
@@ -27,6 +29,10 @@ namespace Shop.BusinessLogic
           {
                return UserRegisterAction(data);
           }
+          public List<UMinimal> GetAllUsers()
+          {
+               return GetAllUsersAction();
+          }
 
           public UserProfileDO GetUserProfile(string username) 
           {
@@ -37,15 +43,20 @@ namespace Shop.BusinessLogic
                return UpdateUserProfileAction(profile);
 
           }
-          public List<OrderHistoryDO> GetUserOrderHistory(string username)
-          {
-               return GetUserOrderHistoryAction(username);
-
-          }
           public string GetUsernameFromCookie(string cookieValue)
           {
                return GetUsernameFromCookieAction(cookieValue);
           }
+
+          public bool ChangePassword(string username, string oldPassword, string newPassword)
+          {
+               return ChangePasswordAction(username, oldPassword, newPassword);
+          }
+          public bool ToggleBanUser(int userId)
+          {
+               return ToggleBanUserAction(userId);
+          }
+          
 
      }
 }

@@ -20,7 +20,7 @@ namespace Shop.Models
           public string Status { get; set; }
           public int Stock { get; set; }
           public PCategories Category { get; set; }
-
+          public List<Review> Reviews { get; set; }
 
      }
 }

@@ -37,6 +37,7 @@ namespace Shop.Domain.Model.User
           public DateTime RegistrationDataTime { get; set; }
           [Display(Name ="login_dt")]
           public DateTime LastLoginDataTime { get; set; }
+          public bool IsBanned {  get; set; }
 
           public URole Level { get; set; }
 

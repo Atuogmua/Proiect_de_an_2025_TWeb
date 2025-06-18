@@ -1,0 +1,39 @@
+﻿@{
+     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+     ViewBag.Title = "Reviews";
+}
+
+@model List<Shop.Models.Review>
+
+<h2>Review Management</h2>
+
+<table class="table table-bordered">
+     <thead>
+          <tr>
+               <th>Product</th>
+               <th>User</th>
+               <th>Rating</th>
+               <th>Content</th>
+               <th>Created At</th>
+               <th>Actions</th>
+          </tr>
+     </thead>
+     <tbody>
+          @foreach (var review in Model)
+          {
+               <tr>
+                    <td>@review.ProductId</td>
+                    <td>@review.Username</td>
+                    <td>@review.Rating</td>
+                    <td>@review.Content</td>
+                    <td>@review.CreatedAt.ToString("g")</td>
+                    <td>
+                         @using (Html.BeginForm("DeleteReview", "Admin", new { id = review.ReviewId }, FormMethod.Post))
+                         {
+                              <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?');">Delete</button>
+                         }
+                    </td>
+               </tr>
+          }
+     </tbody>
+</table>

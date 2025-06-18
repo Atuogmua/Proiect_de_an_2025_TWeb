@@ -18,13 +18,19 @@ namespace Shop.BusinessLogic
                return PlaceOrder(order);
           }
 
-          public List<OrderDO> GetUserOrdersAction(string username)
+          public List<OrderDO> GetUserOrderHistory(string username)
           {
-               return GetUserOrders(username);
+               return GetUserOrderHistoryAction(username);
+          }
+          public List<OrderDO> GetAllOrders()
+          {
+               return GetAllOrdersAction();
           }
 
-
-
+          public bool DeleteOrder(int id)
+          {
+               return DeleteOrderAction(id);
+          }
      }
 
 }

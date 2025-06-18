@@ -1,5 +1,39 @@
 ﻿
 @{
-     Layout = "~/Views/Shared/_SimpleLayout.cshtml";
+     Layout = "~/Views/Shared/_AdminLayout.cshtml";
      ViewBag.Title = "Orders";
 }
+@model List<Shop.Models.Order>
+
+<h2>Manage Orders</h2>
+
+<table class="table table-bordered">
+     <thead>
+          <tr>
+               <th>#</th>
+               <th>User</th>
+               <th>Date</th>
+               <th>Total</th>
+               <th>Status</th>
+               <th>Actions</th>
+          </tr>
+     </thead>
+     <tbody>
+          @foreach (var order in Model)
+          {
+               <tr>
+                    <td>@order.OrderId</td>
+                    <td>@order.Email</td>
+                    <td>@order.OrderDate.ToShortDateString()</td>
+                    <td>@order.TotalPrice.ToString("C")</td>
+                    <td>@order.Status</td>
+                    <td>
+                         @using (Html.BeginForm("DeleteOrder", "Admin", new { id = order.OrderId }, FormMethod.Post))
+                         {
+                              <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+                         }
+                    </td>
+               </tr>
+          }
+     </tbody>
+</table>

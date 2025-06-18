@@ -1,0 +1,46 @@
+﻿@{
+     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+     ViewBag.Title = "Customers";
+}
+
+@model List<Shop.Models.UserData>
+
+<h2>Manage Customers</h2>
+<table class="table table-bordered">
+     <thead>
+          <tr>
+               <th>Name</th>
+               <th>Email</th>
+               <th>Status</th>
+               <th>Actions</th>
+          </tr>
+     </thead>
+     <tbody>
+          @foreach (var user in Model)
+          {
+               <tr>
+                    <td>@user.FullName</td>
+                    <td>@user.Email</td>
+                    <td>
+                         @if (user.IsBanned)
+                         {
+                              <span class="badge bg-danger">Banned</span>
+                         }
+                         else
+                         {
+                              <span class="badge bg-success">Active</span>
+                         }
+                    </td>
+                    <td>
+                         @using (Html.BeginForm("ToggleBan", "Admin", new { id = user.Id }, FormMethod.Post))
+                         {
+                              var btnText = user.IsBanned ? "Unban" : "Ban";
+                              var btnClass = user.IsBanned ? "btn-success" : "btn-danger";
+                              <button type="submit" class="btn @btnClass btn-sm">@btnText</button>
+                         }
+                    </td>
+               </tr>
+          }
+
+     </tbody>
+</table>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shop.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,9 @@ namespace Shop.Models
           public string Email { get; set; }
           public string Phone { get; set; }
           public string Notes { get; set; }
-
+          public DateTime OrderDate { get; set; }
+          public PaymentMethod PaymentMethod { get; set; }
+          public string Status { get; set; }
           public List<CartItem> CartItems { get; set; }
           public decimal TotalPrice => CartItems?.Sum(i => i.Price * i.Quantity) ?? 0;
      }

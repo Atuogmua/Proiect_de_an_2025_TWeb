@@ -6,11 +6,15 @@ using System.Web.Mvc;
 using System.Web.SessionState;
 using Shop.Models;
 using Shop.BusinessLogic.Core;
+using Shop.Domain.Enums;
 using Shop.BusinessLogic.Interface;
 using Shop.Domain.Model.Product;
+using Shop.Domain.Model.User;
+using Shop.Domain.Model.Order;
 using AutoMapper;
 using Shop.Filters;
 using System.IO;
+using Shop.BusinessLogic;
 
 namespace Shop.Controllers
 {
@@ -18,16 +22,25 @@ namespace Shop.Controllers
      public class AdminController : Controller
      {
           private readonly IProduct _product;
+          private readonly IOrder _order;
+          private readonly ISession _session;
           private readonly IMapper _mapper;
 
           public AdminController()
           {
                var bl = new BusinessLogic.BusinessLogic();
                _product = bl.GetProductBL();
+               _order = bl.GetOrderBL();
+               _session = bl.GetSessionBL();
                var config = new MapperConfiguration(cfg =>
                {
                     cfg.CreateMap<ProductDO, Product>();
                     cfg.CreateMap<Product, ProductDO>();
+                    cfg.CreateMap<UMinimal, UserData>();
+                    cfg.CreateMap<Review, ReviewDO>();
+                    cfg.CreateMap<ReviewDO, Review>();
+                    cfg.CreateMap<Order, OrderDO>();
+                    cfg.CreateMap<OrderDO, Order>();
                });
                _mapper = config.CreateMapper();
           }
@@ -37,18 +50,58 @@ namespace Shop.Controllers
           {
                var products = _product.GetAllProducts();
                var viewProducts = _mapper.Map<List<Product>>(products);
-               return View(viewProducts);
+
+               var orders = _order.GetAllOrders(); // Assuming you have this method
+               var customers = _session.GetAllUsers(); // Assuming you have this method
+
+               var model = new AdminDashboard
+               {
+                    TotalProducts = products.Count(),
+                    TotalUsers = customers.Count(),
+                    TotalOrders = orders.Count(),
+                    TotalTransactions = orders.Count(),
+                    TotalRevenue = orders.Sum(o => o.TotalPrice),
+                    NetRevenue = orders.Sum(o => o.TotalPrice * 0.98m), // assume 2% 
+                    PendingOrders = orders.Sum(o => o.TotalPrice)
+               };
+
+               return View(model);
           }
 
-          public ActionResult ManageUsers()
+          [HttpGet]
+          public ActionResult Products(string searchTerm = null, int? id = null)
           {
-               return View();
+               var productDOs = _product.Search(searchTerm, id);
+               var products = _mapper.Map<List<Product>>(productDOs);
+               return View(products);
+          }
+          public ActionResult Orders()
+          {
+               var orders = _order.GetAllOrders();
+               var model = _mapper.Map<List<Order>>(orders);
+               return View(model);
+          }
+
+          public ActionResult Customers()
+          {
+               var users = _session.GetAllUsers();
+               var model = _mapper.Map<List<UserData>>(users).Select(u => new UserData
+               {
+                    Id = u.Id,
+                    FullName = u.FullName,
+                    Email = u.Email,
+                    IsBanned = u.IsBanned
+               }).ToList();
+
+               return View(model);
           }
 
           [HttpGet]
           public ActionResult AddProduct()
           {
-               return View(new ProductDO());
+               var model = new ProductDO();
+               PopulateCategoryDropdown();
+               return View(model);
           }
 
           [HttpPost]
@@ -57,6 +110,7 @@ namespace Shop.Controllers
           {
                if (!ModelState.IsValid)
                {
+                    PopulateCategoryDropdown(product.Category);
                     return View(product);
                }
 
@@ -114,7 +168,12 @@ namespace Shop.Controllers
 
                return View(product);
           }
-
+          [HttpPost]
+          public ActionResult DeleteProduct(int id)
+          {
+               _product.DeleteProduct(id);
+               return RedirectToAction("Products");
+          }
           [HttpGet]
           public ActionResult EditProduct(int id)
           {
@@ -123,6 +182,7 @@ namespace Shop.Controllers
                {
                     return HttpNotFound();
                }
+               PopulateCategoryDropdown(product.Category);
                return View("AddProduct", product); 
           }
 
@@ -198,5 +258,74 @@ namespace Shop.Controllers
 
                return View("AddProduct", product);
           }
+
+
+          private void PopulateCategoryDropdown(PCategories? selectedCategory = null)
+          {
+               var categories = Enum.GetValues(typeof(PCategories))
+                                   .Cast<PCategories>()
+                                   .Select(c => new SelectListItem
+                                   {
+                                        Value = ((int)c).ToString(),
+                                        Text = c.ToString(),
+                                        Selected = selectedCategory.HasValue && selectedCategory.Value == c
+                                   })
+                                   .ToList();
+
+               ViewBag.Categories = categories;
+          }
+
+          [HttpPost]
+          public ActionResult ToggleBan(int id)
+          {
+               var result = _session.ToggleBanUser(id);
+               if (!result)
+               {
+                    TempData["Error"] = "User not found or error occurred.";
+               }
+               else
+               {
+                    TempData["Success"] = "User status updated.";
+               }
+
+               return RedirectToAction("Customers");
+          }
+
+          [HttpPost]
+          public ActionResult DeleteOrder(int id)
+          {
+               _order.DeleteOrder(id);
+               return RedirectToAction("ManageOrders");
+          }
+
+
+          [HttpGet]
+          public ActionResult Reviews()
+          {
+               var reviewDOs = _product.GetAllReviews();
+               var reviews = _mapper.Map<List<Review>>(reviewDOs);
+               return View(reviews);
+          }
+
+          [HttpPost]
+          [ValidateAntiForgeryToken]
+          public ActionResult DeleteReview(int id)
+          {
+               var success = _product.DeleteReview(id);
+
+               if (success)
+               {
+                    TempData["Success"] = "Review deleted successfully.";
+               }
+               else
+               {
+                    TempData["Error"] = "Failed to delete review.";
+               }
+
+               return RedirectToAction("ManageReviews");
+          }
+
      }
+
+
 }
